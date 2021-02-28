@@ -58,8 +58,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    /*padding-left: 20px;
+    padding-right: 20px; */
     background: rgba(255,255,255,0.8);  
 }
 .top__info {
@@ -74,7 +74,7 @@ body {
 .top__info-reminder {
     background-color: rgb(238, 238, 238);
     border-bottom: 1px solid rgb(153, 153, 153);
-    min-width: 180px;
+    min-width: 200px;
 }
 .top__info-reminder p {
     text-transform: uppercase;
@@ -89,6 +89,8 @@ body {
 .days-counter {
     font-size: 40px;
     font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .coupon__link {
     font-size: 13px;
@@ -117,10 +119,10 @@ ul {
 }
 .main__menu {
     min-width: 180px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     padding-right: 20px;
 }
-.navigation span {
+.span__title {
     font-family: 'Inter', sans-serif;
     display: block;
     text-transform: uppercase;
@@ -128,6 +130,10 @@ ul {
     background-color: rgb(238, 238, 238);
     border-bottom: 1px solid rgb(153, 153, 153);
     padding: 5px 10px;
+}
+.span__link {
+    color: #23527c;
+    font-weight: bold;
 }
 .navigation__list-item--link {
     font-family: 'Inter', sans-serif;
@@ -145,7 +151,7 @@ ul {
     font-weight: bold;
 }
 
-.news__header span {
+/* .news__header span {
     font-family: 'Inter', sans-serif;
     display: block;
     text-transform: uppercase;
@@ -153,11 +159,14 @@ ul {
     background-color: rgb(238, 238, 238);
     border-bottom: 1px solid rgb(153, 153, 153);
     padding: 5px 10px;
-}
+} */
 .news__inner {
     display: flex;
     margin-bottom: 20px;
 }
+/* .news__header .span__title {
+    margin-right: 20px;
+} */
 .news__inner .news__content {
     padding-right: 10px;
     width: 33%;
@@ -170,8 +179,8 @@ ul {
     font-size: 24px;
     font-weight: 500;
     color: black;
-    text-decoration: underline transparent;
-    transition: all 0.5s;
+    /*text-decoration: underline transparent;
+    transition: all 0.5s; */
 }
 
 .news__title-link:hover { 
@@ -180,6 +189,7 @@ ul {
 
 .news__text {
     font-size: 13px;
+    margin-top: 20px;
 }
 .news__comment {
     display: flex;
@@ -195,14 +205,15 @@ ul {
 }
 .best__wrapper {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
 }
-.best__content {
+.best__content:not(:last-child) {
     margin-right: 20px;
     width: 25%;
 }
-.best__wrapper span {
+ /* .best__wrapper span {
     font-family: 'Inter', sans-serif;
     display: block;
     text-transform: uppercase;
@@ -210,16 +221,14 @@ ul {
     background-color: rgb(238, 238, 238);
     border-bottom: 1px solid rgb(153, 153, 153);
     padding: 5px 10px;   
-}
+} */
 .best__table {
     font-size: 13px;
 }
 /* стили для таблиц - это боооооооооль =(((( */
 .best__table {
-    color: rgb(153, 153, 153);
-    font-size: 11px;
+    color: rgb(153, 153, 153);  
 }
-
 .best__table tr td:not(:first-child) {
     font-size: 13px;
     color: black;
@@ -231,22 +240,25 @@ ul {
 .best__table td {
     padding: 2px;
 }
+.best__table tr td:nth-child(3) {
+    text-align: end;
+}
 .content__bottom {
     display: flex;
 }
 .news__archive {
-    width: 70%;
+    width: 75%;
     margin-right: 10px;
 }
-.news__archive .news__content {
+.news__archive .news__content:not(:last-child) {
     border-bottom: 1px solid rgb(153, 153, 153);
     margin-bottom: 10px;
 }
 .clubs__standing {
-    width: 30%;
-    margin-right: 20px;
+    width: 25%;
+    /* margin-right: 20px; */
 }
-.news__archive span,
+/* .news__archive span,
 .clubs__standing span {
     font-family: 'Inter', sans-serif;
     display: block;
@@ -255,9 +267,15 @@ ul {
     background-color: rgb(238, 238, 238);
     border-bottom: 1px solid rgb(153, 153, 153);
     padding: 5px 10px;
-}
+} */
 .clubs__standing-table {
     font-size: 13px;
+}
+.clubs__standing-table td {
+    padding-right: 5px;
+}
+.footer__inner {
+    padding-bottom: 20px;
 }
 .footer__copyright {
     margin-top: 10px;

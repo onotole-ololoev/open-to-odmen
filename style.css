@@ -51,7 +51,7 @@ body {
 }
 .top .container {
     background: rgba(255,255,255);
-    background-image: url(/images/top-background.png);
+    background-image: url('images/top-background.png');
     background-size: 590px auto;
 }
 .top__inner {
@@ -220,7 +220,17 @@ ul {
     font-size: 11px;
 }
 
-
+.best__table tr td:not(:first-child) {
+    font-size: 13px;
+    color: black;
+}
+.best__table tr:first-child td {
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+}
+.best__table td {
+    padding: 2px;
+}
 .content__bottom {
     display: flex;
 }

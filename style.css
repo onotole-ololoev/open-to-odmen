@@ -37,7 +37,8 @@ body {
    /* margin-bottom: 20px; */
     height: 40px;
     position: fixed; /* Липкое позиционирование */
-    top: 0; /* Положение сверху */
+    top: 0;
+    left: 0; 
     width: 100%;
 }
 .header__inner {
@@ -45,12 +46,14 @@ body {
     justify-content: flex-end;
     padding-right: 20px;
     padding-top: 8px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 .header__link {
     display: flex;
     align-items: center;
-
-    margin-right: 15px;
+    font-weight: bold;
+    margin-left: 15px;
     color: rgb(204, 204, 204);
     transition: all 0.4s;
 }
@@ -193,7 +196,7 @@ ul {
 
     width: 33%;
 }
-.news__content:not(:last-child) {
+.news__block .news__content:not(:last-child) {
     margin-right: 20px;
 }
 .news__content:last-child {
@@ -269,7 +272,7 @@ ul {
     margin-top: 10px;
     display: flex;
     align-items: center;
-
+    font-weight: bold;
     color: rgb(204, 204, 204);
 }
 .footer__copyright-link {

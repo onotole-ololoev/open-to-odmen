@@ -374,5 +374,9 @@ ul {
     
     .news__inner .news__content {
         width: 100%;
+        padding: 0 10px 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgb(238, 238, 238);
     }
+    
 }

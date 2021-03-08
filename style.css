@@ -302,44 +302,6 @@ ul {
 .footer__copyright-link:hover {
     color: rgba(255,255,255);
 }
-@media screen and (max-width: 768px) {
-    .header__inner {
-        display: flex;
-        justify-content: space-between;
-    }
-    .hamburger__btn {
-        display: block;
-    }
-    .main__menu {
-        /* display: none; */
-        display: block;
-    }
-    .navigation__list {
-        position: absolute;
-        left: 0;
-        top: 0;
-        min-width: 200px;
-        height: 100%;
-        padding: 10px;
-        background-color: rgba(255,255,255);
-        box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
-        display: block;
-        
-    }
-    .navigation__list-item {
-        height: 30px;
-        padding: 7px 14px;
-        border-bottom: 1px solid rgb(238, 238, 238);
-    }
-    .navigation__list-item--link {
-        padding: 0;
-        border-bottom: none;
-    }
-    .navigation__list-item:hover {
-        background-color: rgb(238, 238, 238);
-    }
-
-}
 
 @media screen and (max-width: 768px) {
     .header__inner {
@@ -360,6 +322,17 @@ ul {
         box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
         display: block;
         z-index: 101;
+    }
+    .navigation__list {
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-width: 200px;
+        height: 100%;
+        padding: 10px;
+        background-color: rgba(255,255,255);
+        box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
+        display: block;    
     }
     .navigation__list::before {
         content: 'Openball';

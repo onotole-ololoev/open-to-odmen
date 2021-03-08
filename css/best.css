@@ -61,3 +61,10 @@
         grid-template-rows: auto auto;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .best__wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}

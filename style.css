@@ -41,7 +41,7 @@ body {
     top: 0;
     left: 0; 
     width: 100%;
-    z-index: 99;
+    z-index: 98;
 }
 .header__inner {
     display: flex;
@@ -243,6 +243,10 @@ ul {
     display: flex;
     align-items: center;
 }
+.comment__block { /* иконка комментария к новости и счетчик комментариев не переносятся отдельно */
+    white-space: nowrap;
+    
+}
 .comment__icon {
     margin-left: 10px;
     margin-right: 5px;
@@ -312,6 +316,11 @@ ul {
         display: block;
     }
     .main__menu {
+        position: absolute; /* освобождаем место для горизонтальных новостей, чтобы они "заплывали" под мобильное меню */
+        left: 0;
+        top: 0;
+    }
+    .main__menu .navigation__list {
         position: fixed;
         left: 0;
         top: 0;
@@ -321,24 +330,12 @@ ul {
         background-color: rgba(255,255,255);
         box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
         display: none;
-        z-index: 101;
+        z-index: 100;   /* перекрываем липкий header */
     }
-    .navigation__list {
-        position: absolute;
-        left: 0;
-        top: 0;
-        min-width: 200px;
-        height: 100%;
-        padding: 10px;
-        background-color: rgba(255,255,255);
-        box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
-        display: block;    
-    }
-    .navigation__list::before {
+    .navigation__list::before { /* добавляем название сайта на верх всплывающего мобильного меню */
         content: 'Openball';
         height: 30px;
         padding: 7px 14px;
-        /* border-bottom: 1px solid rgb(238, 238, 238); */
         font-size: 18px;
         color: #23527c;
         line-height: 20px;
@@ -348,12 +345,11 @@ ul {
         text-align: left;
         cursor: pointer;
     }
-    .main__menu::after {
+    .header::after {  /* тень на остальной экран после всплывания мобильного меню */
         content: "";
         background-color: rgb(0, 0, 0, 0.3);
         position: fixed;
-        inset: 0px;
-        z-index: -1;    
+        inset: 0px; /* вот это я так и не понял зачем, но без этого свойства тень не выходит */
     }
     .navigation__list-item {
         height: 30px;

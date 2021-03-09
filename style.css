@@ -187,7 +187,9 @@ ul {
 }
 .span__link {
     color: rgb(0, 170, 50);
-
+}
+.span__link:hover {
+    text-decoration: underline;
 }
 .navigation__list-item--link {
    /* font-family: 'Inter', sans-serif; */
@@ -256,36 +258,33 @@ ul {
     color: rgb(153, 153, 153);
 }
 
-
 .content__bottom {
-    display: flex;
-}
-.news__archive {
-    width: 75%;
-    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: 20px;
+    gap: 10px;
 }
 .news__archive .news__content:not(:last-child) {
-    border-bottom: 1px solid rgb(153, 153, 153);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding-bottom: 5px;
     margin-bottom: 10px;
 }
-.clubs__standing {
-    width: 25%;
-    /* margin-right: 20px; */
-}
-/* .news__archive span,
-.clubs__standing span {
-    font-family: 'Inter', sans-serif;
-    display: block;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-    background-color: rgb(238, 238, 238);
-    border-bottom: 1px solid rgb(153, 153, 153);
-    padding: 5px 10px;
-} */
-
 .clubs__standing-table td {
     padding-right: 5px;
+    white-space: nowrap;
 }
+/* переделываем ленту новостей и таблицу топ5 лиг европы, чтобы не было прокрутки внизу и табличка растягивалась на всю ширину экрана */
+@media screen and (max-width: 640px) {
+    .content__bottom {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .news__archive,
+    .clubs__standing {
+        flex: 1;
+    }
+}
+
 .footer__inner {
     padding-bottom: 20px;
     margin-left: 20px;
@@ -329,7 +328,7 @@ ul {
         padding: 10px;
         background-color: rgba(255,255,255);
         box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
-        display: none;
+        display: block;
         z-index: 100;   /* перекрываем липкий header */
     }
     .navigation__list::before { /* добавляем название сайта на верх всплывающего мобильного меню */

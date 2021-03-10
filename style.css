@@ -209,7 +209,6 @@ ul {
 
 .news__inner {
     display: flex;
-    margin-bottom: 20px;
 }
 
 .news__inner .news__content {
@@ -383,7 +382,7 @@ ul {
 
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 640px) {
     .top__inner {
         flex-direction: column;
         position: relative;

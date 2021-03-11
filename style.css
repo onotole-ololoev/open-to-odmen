@@ -249,14 +249,16 @@ ul {
     
 }
 .comment__icon {
-    margin-left: 10px;
+    margin-left: 5px;
     margin-right: 5px;
 }
 .comment__counter {
     font-size: 12px;
     color: rgb(153, 153, 153);
 }
-
+.comment__counter:hover {
+    text-decoration: underline;
+}
 .content__bottom {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -278,9 +280,8 @@ ul {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-    .news__archive,
-    .clubs__standing {
-        flex: 1;
+    .clubs__standing-table {
+        width: 100%;
     }
 }
 

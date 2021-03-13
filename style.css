@@ -251,7 +251,9 @@ ul {
 .news__title-link:hover {
     text-decoration: underline;
 }
-
+.news__archive .news__comment {
+    padding-top: 5px;
+}
 .news__text {
 
     margin-top: 20px;
@@ -296,6 +298,10 @@ ul {
 }
 .clubs__standing-table tr td:nth-child(2) {
     width: 100%;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: table-cell;
 }
 /* переделываем ленту новостей и таблицу топ5 лиг европы, чтобы не было прокрутки внизу и табличка растягивалась на всю ширину экрана */
 @media screen and (max-width: 640px) {

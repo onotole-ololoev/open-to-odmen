@@ -32,7 +32,6 @@ body {
 
 }
 .header {
-
     background-color: rgb(31, 62, 97);
     box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
    /* margin-bottom: 20px; */
@@ -96,8 +95,47 @@ body {
 .header__link:hover {
     color: rgba(255,255,255);
 }
-
-
+.header__account-info {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    height: 100px;
+    width: 205px;
+    background:  rgba(255,255,255);
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.user-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(31, 62, 97);
+    margin-bottom: 5px;
+}
+.user-emale {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.exit__block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+.exit__link {
+    margin-right: 10px;
+}
+.exit-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(31, 62, 97);
+}
 .top__section {
     background: rgba(255,255,255);
     background-image: url('images/top-background.png');

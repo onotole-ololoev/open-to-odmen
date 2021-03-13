@@ -207,6 +207,9 @@ ul {
 .span__link:hover {
     text-decoration: underline;
 }
+.clubs__standing .span__link:hover {
+    text-decoration: none;
+}
 .navigation__list-item--link {
    /* font-family: 'Inter', sans-serif; */
     color: #23527c;
@@ -255,8 +258,7 @@ ul {
     padding-top: 5px;
 }
 .news__text {
-
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .news__comment {
     display: flex;

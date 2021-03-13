@@ -167,7 +167,8 @@ body {
     color: rgb(27, 96, 155);
     font-size: 30px;
     font-weight: bold;
-
+    padding-left: 20px;
+    font-style: italic;
 }
 .main__section {
     background-color: rgba(255,255,255);
@@ -285,9 +286,16 @@ ul {
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
+.clubs__standing-table {
+    width: 100%;
+    
+}
 .clubs__standing-table td {
     padding-right: 5px;
     white-space: nowrap;
+}
+.clubs__standing-table tr td:nth-child(2) {
+    width: 100%;
 }
 /* переделываем ленту новостей и таблицу топ5 лиг европы, чтобы не было прокрутки внизу и табличка растягивалась на всю ширину экрана */
 @media screen and (max-width: 640px) {
@@ -302,7 +310,8 @@ ul {
 
 .footer__inner {
     padding-bottom: 20px;
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
 }
 .footer__copyright {
     margin-top: 10px;
@@ -444,4 +453,9 @@ ul {
         font-weight: bold;
     }
     
+}
+@media screen and (max-width: 460px) {
+    .top__logo {
+        display: none;
+    }
 }

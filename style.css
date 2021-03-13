@@ -70,6 +70,7 @@ body {
 }
 .header__registration {
     display: flex;
+    display: none;
 }
 .header__account {
     display: flex;
@@ -408,7 +409,7 @@ ul {
         padding: 10px;
         background-color: rgba(255,255,255);
         box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
-        display: block;
+        display: none;
         z-index: 100;   /* перекрываем липкий header */
     }
     .navigation__list::before { /* добавляем название сайта на верх всплывающего мобильного меню */
@@ -429,6 +430,7 @@ ul {
         background-color: rgb(0, 0, 0, 0.3);
         position: fixed;
         inset: 0px; /* вот это я так и не понял зачем, но без этого свойства тень не выходит */
+        display: none;
     }
     .navigation__list-item {
         height: 30px;
@@ -465,7 +467,6 @@ ul {
 
 @media screen and (max-width: 640px) {
     .top__inner {
-        flex-direction: column;
         position: relative;
     }
     .top__info {

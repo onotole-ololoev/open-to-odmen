@@ -480,6 +480,7 @@ ul {
     .top__info {
         position: absolute;
         bottom: 0;
+        left: 0;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -519,6 +520,6 @@ ul {
     }
     
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 400px) {
    
 }

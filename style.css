@@ -287,12 +287,13 @@ ul {
 
 .news__inner .news__content {
     width: 33%;
+    padding-bottom: 10px;
 }
 .news__block .news__content:not(:last-child) {
     margin-right: 20px;
 }
 .news__content:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .news__date {
     font-size: 12px;
@@ -354,6 +355,7 @@ ul {
 }
 .clubs__standing-table td {
     padding-right: 5px;
+    padding-left: 5px;
     white-space: nowrap;
 }
 .clubs__standing-table tr td:nth-child(2) {
@@ -521,5 +523,10 @@ ul {
     
 }
 @media screen and (max-width: 400px) {
-   
+    .logo-openball {
+        width: 100px;
+    }
+    .top__title h1 {
+        font-size: 14px;
+    }
 }

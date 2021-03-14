@@ -411,6 +411,9 @@ ul {
         left: 0;
         top: 0;
     }
+    .navigation .span__title {
+        display: none;
+    }
     .main__menu .navigation__list {
         position: fixed;
         left: 0;

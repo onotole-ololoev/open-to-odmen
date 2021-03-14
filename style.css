@@ -529,4 +529,7 @@ ul {
     .top__title h1 {
         font-size: 14px;
     }
+    .top__section {
+        background-size: 390px auto;
+    }
 }

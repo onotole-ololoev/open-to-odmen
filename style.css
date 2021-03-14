@@ -84,6 +84,9 @@ body {
     border: 2px solid rgb(204, 204, 204);
     margin-left: 10px;
 }
+.header__avatar:hover {
+    cursor: pointer;
+}
 /*.avatar {
     border-radius: 50%;
     height: 35px;

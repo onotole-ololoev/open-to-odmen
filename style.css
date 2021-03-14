@@ -75,18 +75,21 @@ body {
 .header__account {
     display: flex;
 }
-/* .header__avatar {
-    background:  rgb(204, 204, 204);
+.header__avatar {
+    background-image: url('images/avatar.PNG');
+    background-size: 35px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-} */
-.avatar {
+    border: 2px solid rgb(204, 204, 204);
+    margin-left: 10px;
+}
+/*.avatar {
     border-radius: 50%;
     height: 35px;
     width: 35px;
     margin-left: 10px;
-}
+} */
 .message__counter,
 .money__counter {
     padding-right: 5px;

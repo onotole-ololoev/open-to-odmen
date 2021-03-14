@@ -92,6 +92,10 @@ body {
     padding-right: 5px;
     padding-left: 5px;
 }
+.message__unread {
+    font-size: 18px;
+    font-weight: bold;
+}
 .header__link {
     display: flex;
     align-items: center;
@@ -277,8 +281,8 @@ ul {
 
 .news__inner {
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .news__inner .news__content {
@@ -340,6 +344,9 @@ ul {
     border-bottom: 1px solid rgb(238, 238, 238);
     padding-bottom: 5px;
     margin-bottom: 10px;
+}
+.news__archive .news__content {
+    padding-left: 5px;
 }
 .clubs__standing-table {
     width: 100%;
@@ -454,7 +461,6 @@ ul {
     
     .news__inner .news__content {
         width: 100%;
-        padding: 0 10px 10px;
         margin-bottom: 10px;
         border-bottom: 1px solid rgb(238, 238, 238);
     }

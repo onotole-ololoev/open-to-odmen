@@ -277,6 +277,8 @@ ul {
 
 .news__inner {
     display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .news__inner .news__content {

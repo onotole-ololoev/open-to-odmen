@@ -86,6 +86,7 @@ body {
 }
 .header__avatar:hover {
     cursor: pointer;
+    box-shadow: rgb(204 204 204) 0px 1px 5px;
 }
 /*.avatar {
     border-radius: 50%;

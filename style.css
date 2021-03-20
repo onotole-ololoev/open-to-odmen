@@ -386,6 +386,177 @@ ul {
     text-overflow: ellipsis;
     display: table-cell;
 }
+/* стили для трансферов ============================================ */
+.transfer__block {
+    width: 100%;
+    padding-bottom: 10px;
+}
+.transfer__inner {
+    display: flex;
+    flex-direction: column;
+}
+.transfer__nav {
+    display: flex;
+    padding: 5px;
+    margin: 10px 0px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.transfer__heading-link {
+    padding: 2px 10px;
+    color: #23527c;
+}
+.transfer__heding:first-child { 
+    border-right: 1px solid rgb(238, 238, 238);
+}
+.transfer__main {
+    display: flex;
+    justify-content: space-between;
+}
+.current__club {
+    width: 49%;
+}
+.club__table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 1px;
+}
+.club__table-header {
+    display: flex;
+    justify-content: space-between;
+}
+.table__head {
+    padding: 5px 10px;
+    color: white;
+}
+.club__table td {
+    padding: 3px;
+}
+.club__table tr td:nth-child(3),
+.club__table tr td:nth-child(4) {
+    width: 40px;
+}
+.club__table tr:nth-child(2n+1) {
+    background-color: rgb(221, 221, 221);
+}
+.club__table tr:nth-child(2n) {
+    background-color: rgb(238, 238, 238);
+}
+.club__table tr.table__header {
+    background-color:rgb(27, 96, 155);
+}
+.keeper__logo {
+    width: 15px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+.plus__logo {
+    width: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+    display: none;
+}
+.delete__logo,
+.add__logo {
+    cursor: pointer;
+}
+.club__table-player,
+.club__table-team {
+    text-align: left;
+}
+.transfer__window {
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+}
+.window-closed {
+    color: red;
+    font-weight: bold;
+}
+.save__btn {
+    text-align: center;
+    background: rgb(35, 82, 124);
+    border-radius: 4px;
+    padding: 6px 12px;
+    color: white;
+    cursor: pointer;
+}
+.save__btn-activated {
+    opacity: 0.2;
+    cursor: default;
+}
+.players__list {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+.players__list-back {
+    padding: 8px;
+    color: rgb(35, 82, 124);
+    cursor: pointer;
+}
+.transfer__balance {
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+}
+.balance-counter {
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.players__table {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    border-spacing: 1px;
+}
+.select__row {
+    width: 200px;
+}
+.players__table tr {
+    background-color: rgb(238, 238, 238);  
+}
+.players__table tr:nth-child(2n) {
+    background-color: rgb(221, 221, 221);
+}
+.table__head {
+    background-color:rgb(27, 96, 155);
+}
+.short__cell {
+    width: 40px;
+}
+.players__table tr td {
+    padding: 3px 5px;
+}
+.players__table-select.club__table-player {
+    width: 100%;
+}
+.table__players-bottom {
+    display: flex;
+    justify-content: space-around;
+}
+.table__players-bottom span:nth-child(1),
+.table__players-bottom span:nth-child(3) {
+    cursor: pointer;
+}
+.active {
+    background-color: rgb(240, 255, 255);
+}
+.buy {
+    opacity: 0.5;
+}
+/* прячем кнопку НАЗАД */
+.players__list-back {
+    display: block;
+}
+/* конец стилей для трансферов */
+
+
+
 /* переделываем ленту новостей и таблицу топ5 лиг европы, чтобы не было прокрутки внизу и табличка растягивалась на всю ширину экрана */
 @media screen and (max-width: 640px) {
     .content__bottom {

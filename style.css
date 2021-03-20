@@ -712,6 +712,22 @@ ul {
         font-size: 18px;
         font-weight: bold;
     }
+    /* адаптив для блока трансферов */
+    .current__club {
+        width: 100%;
+       
+    }
+    .players__list {
+        width: 100%;
+        display: none;
+    }
+    .club__table-header--icon {
+        display: flex;
+    }
+    .plus__logo {
+        display: block;
+        margin-right: 3px;
+    }
     
 }
 @media screen and (max-width: 400px) {

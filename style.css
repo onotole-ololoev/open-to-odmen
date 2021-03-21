@@ -495,6 +495,7 @@ ul {
     padding: 8px;
     color: rgb(35, 82, 124);
     cursor: pointer;
+    display: none;
 }
 .transfer__balance {
     padding: 5px;
@@ -549,10 +550,7 @@ ul {
 .buy {
     opacity: 0.5;
 }
-/* прячем кнопку НАЗАД */
-.players__list-back {
-    display: block;
-}
+
 /* конец стилей для трансферов */
 
 
@@ -713,14 +711,18 @@ ul {
         font-weight: bold;
     }
     /* адаптив для блока трансферов */
+    .transfer__main {
+        flex-direction: column-reverse;
+    }
     .current__club {
         width: 100%;
-       
     }
     .players__list {
         width: 100%;
-        display: none;
     }
+    .players__table {
+        display: none;
+    } 
     .club__table-header--icon {
         display: flex;
     }

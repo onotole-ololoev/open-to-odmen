@@ -320,10 +320,14 @@ ul {
     font-size: 12px;
     color: rgb(153, 153, 153);
 }
+.news__inner .news__date {
+    margin-bottom: 5px;    
+}
 .news__title-link {
     font-size: 18px;
     font-weight: 500;
     color: black;
+
     /*text-decoration: underline transparent;
     transition: all 0.5s; */
 }
@@ -550,7 +554,7 @@ ul {
 .buy {
     opacity: 0.5;
 }
-/* диалоговое окно на затемненном фоне */
+/* диалоговое окно на затемненном фоне popup window -------------------------------------------------------*/
 .popup__back {
     display: block;
     position: fixed;
@@ -738,7 +742,7 @@ ul {
         font-size: 18px;
         font-weight: bold;
     }
-    /* адаптив для блока трансферов */
+    /* адаптив для блока трансферов -------------------------------------------------------*/
     .transfer__main {
         flex-direction: column-reverse;
     }

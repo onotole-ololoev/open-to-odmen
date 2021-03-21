@@ -550,6 +550,34 @@ ul {
 .buy {
     opacity: 0.5;
 }
+/* диалоговое окно на затемненном фоне */
+.popup__back {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: 100;
+}
+.popup__window {
+    display: block;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 114 173 / 14%) 0px 6px 18px;
+    border-radius: 20px;
+    padding: 24px;
+    max-height: max-content;
+    min-width: 350px;
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    text-align: center;
+    
+}
 
 /* конец стилей для трансферов */
 
@@ -744,5 +772,10 @@ ul {
     }
     .message__text {
         display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    .popup__window {
+        min-width: 310px;
     }
 }

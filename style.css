@@ -478,6 +478,9 @@ ul {
 .transfer__table tr td:nth-child(3),
 .transfer__table tr td:nth-child(4) {
     width: 40px;
+} 
+.short__cell {
+    width: 30px;
 }
 .transfer__table tr {
     background-color: rgb(221, 221, 221);
@@ -500,11 +503,11 @@ ul {
 .add__logo {
     cursor: pointer;
 }
-.club__table-player,
+.transfer__table-player,
 .club__table-team {
     text-align: left;
 }
-.transfer__window {
+.transfer__main-aside {
     margin: 5px 0;
     padding: 8px;
     border: 1px solid rgb(221, 221, 221);
@@ -515,7 +518,7 @@ ul {
     color: red;
     font-weight: bold;
 }
-.save__btn {
+.transfer_btn {
     text-align: center;
     background: rgb(35, 82, 124);
     border-radius: 4px;
@@ -523,7 +526,7 @@ ul {
     color: white;
     cursor: pointer;
 }
-.save__btn-activated {
+.transfer_btn-activated {
     opacity: 0.2;
     cursor: default;
 }
@@ -537,13 +540,6 @@ ul {
     color: rgb(35, 82, 124);
     cursor: pointer;
 }
-.transfer__balance {
-    padding: 5px;
-    margin-bottom: 5px;
-    border: 1px solid rgb(221, 221, 221);
-    background-color: rgb(238, 238, 238);
-    text-align: center;
-}
 .balance-counter {
     font-size: 24px;
     padding-left: 5px;
@@ -552,19 +548,12 @@ ul {
 .select__row {
     width: 200px;
 }
-.short__cell {
-    width: 40px;
-}
-
-.players__table-select.club__table-player {
-    width: 100%;
-}
-.table__players-bottom {
+.transfer__table-bottom {
     display: flex;
     justify-content: space-around;
 }
-.table__players-bottom span:nth-child(1),
-.table__players-bottom span:nth-child(3) {
+.transfer__table-bottom span:nth-child(1),
+.transfer__table-bottom span:nth-child(3) {
     cursor: pointer;
 }
 .active {

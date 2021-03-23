@@ -484,9 +484,6 @@ ul {
 .transfer__table tr:nth-child(2n) {
     background-color: rgb(238, 238, 238);
 }
-.transfer__table tr.table__header {
-    background-color:rgb(27, 96, 155);
-}
 .keeper__logo {
     width: 15px;
     cursor: pointer;

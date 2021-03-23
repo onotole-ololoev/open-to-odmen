@@ -1,6 +1,3 @@
-@import "css/best.css";
-
-
 html {
     box-sizing: border-box;
 }
@@ -9,8 +6,6 @@ html {
 *::after,
 *::before{
     box-sizing: inherit;
-  /*  font-family: 'Inter', sans-serif;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
 }
 * {
     padding: 0;
@@ -32,15 +27,16 @@ body {
 
 }
 .header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
     background-color: rgb(31, 62, 97);
     box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
-   /* margin-bottom: 20px; */
+    text-align: center;
+    color: rgb(204, 204, 204);
     height: 40px;
-    position: fixed; /* Липкое позиционирование */
-    top: 0;
-    left: 0; 
-    width: 100%;
-    z-index: 98;
 }
 .header__inner {
     display: flex;
@@ -88,12 +84,6 @@ body {
     cursor: pointer;
     box-shadow: rgb(204 204 204) 0px 1px 5px;
 }
-/*.avatar {
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    margin-left: 10px;
-} */
 .message__counter,
 .money__counter {
     padding-right: 5px;
@@ -150,33 +140,25 @@ body {
 .exit__link {
     margin-right: 10px;
 }
-.exit-text {
+.exit__text {
     font-size: 13px;
     font-weight: bold;
     color: rgb(31, 62, 97);
 }
 .top__section {
-    background: rgba(255,255,255);
-    background-image: url('images/top-background.png');
-    background-size: 590px auto;
-
-}
-.top__inner {
+    background-image: url('images/top_bckrd.PNG');
+    background-size: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*padding-left: 20px;
-    padding-right: 20px; */
-    background: rgba(255,255,255,0.8);
-    /*height: 100px; */
     margin-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
+
 }
 .top__main {
     display: flex;
-    flex-direction: space-between;
-    align-items: center;
+    justify-content: center;
 }
 .top__info {
     display: flex;
@@ -220,7 +202,6 @@ body {
     text-decoration: underline;
 }
 .top__title h1 {
-    /* font-family: 'Inter', sans-serif; */
     display: table;
     word-spacing: 60px;
     line-height: 1.5;
@@ -231,20 +212,17 @@ body {
     color: rgb(27, 96, 155);
 }
 .main__section {
+    display: flex;
     background-color: rgba(255,255,255);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 ul {
     list-style: none;
 }
-.main__inner {
-    display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 .main__menu {
     background-color: rgba(255,255,255);
     min-width: 150px;
-    /* padding-left: 20px; */
     padding-right: 20px;
 }
 .top__info-reminder .span__title {
@@ -267,15 +245,11 @@ ul {
 .span__link:hover {
     text-decoration: underline;
 }
-.clubs__standing .span__link:hover {
-    text-decoration: none;
-}
 .navigation {
     position: sticky;
     top: 40px;
 }
 .navigation__list-item--link {
-   /* font-family: 'Inter', sans-serif; */
     color: #23527c;
     display: block;
     padding: 5px 7px;
@@ -300,97 +274,160 @@ ul {
     border-radius: 10px;
     text-align: center;
 }
-.news__inner {
-    display: flex;
-    padding-left: 5px;
-    padding-right: 5px;
-}
 
-.news__inner .news__content {
-    width: 33%;
+/* стили для основного блока ===================================================================== */
+.main__content-wrapper {
+    width: 100%;
     padding-bottom: 10px;
 }
-.news__block .news__content:not(:last-child) {
+.main__content-inner {
+    display: flex;
+    padding: 0 10px 0;
+}
+.main__content-top .news__content {
+    width: 33%;
+}
+.main__content-top .news__content:not(:last-child) {
     margin-right: 20px;
 }
-.news__content:last-child {
-    margin-bottom: 10px;
-}
-.news__date {
+.news__content-date {
     font-size: 12px;
     color: rgb(153, 153, 153);
 }
-.news__inner .news__date {
-    margin-bottom: 5px;    
-}
-.news__title-link {
+.news__content-title {
+    display: block;
     font-size: 18px;
     font-weight: 500;
     color: black;
-
-    /*text-decoration: underline transparent;
-    transition: all 0.5s; */
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
-
-.news__title-link:hover {
+.news__content-title:hover {
     text-decoration: underline;
 }
-.news__archive .news__comment {
-    padding-top: 5px;
-}
-.news__text {
-    margin-top: 10px;
-}
-.news__comment {
-    display: flex;
-    align-items: center;
-}
-.comment__block { /* иконка комментария к новости и счетчик комментариев не переносятся отдельно */
+/* запрещаем перенос значка комменов отдельно от счетчика комментов */
+.news__content-comment {
     white-space: nowrap;
-    
 }
-.comment__icon {
-    margin-left: 5px;
-    margin-right: 5px;
+.news__content-comment--icon {
+    padding-right: 2px;
+    padding-left: 10px;
 }
-.comment__counter {
+.news__content-comment--counter {
     font-size: 12px;
     color: rgb(153, 153, 153);
 }
-.comment__counter:hover {
+.news__content-comment--counter:hover {
     text-decoration: underline;
 }
-.content__bottom {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    margin-bottom: 20px;
-    gap: 10px;
+.main__content-center {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
-.news__archive .news__content:not(:last-child) {
-    border-bottom: 1px solid rgb(238, 238, 238);
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.main__content-center .main__content-wrapper {
+    width: 24%;
 }
-.news__archive .news__content {
-    padding-left: 5px;
-}
-.clubs__standing-table {
+.table {
     width: 100%;
-    
 }
-.clubs__standing-table td {
+.main__content-center th {
+    color: rgb(170, 170, 170);
+}
+.main__content-center th,
+.main__content-center td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.main__content-center th:first-child,
+.main__content-center td:first-child {
     padding-right: 5px;
-    padding-left: 5px;
+}
+.main__content-center th:first-child,
+.main__content-center th:nth-child(2) {
+    text-align: left;
+}
+.main__content-center th:nth-child(3),
+.main__content-center td:nth-child(3) {
+    text-align: right;
+}
+.table__date {
+    color: rgb(170, 170, 170);
     white-space: nowrap;
 }
-.clubs__standing-table tr td:nth-child(2) {
+.table__team { 
     width: 100%;
     max-width: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: table-cell;
+    white-space: nowrap;
 }
-/* стили для трансферов ============================================ */
+.main__content-bottom .main__content-inner {
+    flex-direction: column;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.main__content-bottom .main__content-inner:last-child {
+    border-bottom: none;
+}
+.news__comment {
+    display: flex;
+}
+.main__content-bottom {
+    display: flex;
+}
+.main__content-bottom .main__content-wrapper:first-child {
+    margin-right: 10px;
+}
+.main__content-bottom .main__content-wrapper:last-child {
+    width: 40%;
+}
+.main__content-bottom .main__content-wrapper:last-child .span__link:hover {
+    text-decoration: none;
+}
+.icon__cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__content-bottom td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.main__content-bottom td:first-child {
+    padding-right: 5px;
+}
+.main__content-bottom tr td:nth-child(2) {
+    width: 100%;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: table-cell;
+    white-space: nowrap;
+}
+.footer {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer__copyright {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(204, 204, 204);
+}
+.footer__copyright-link {
+    margin-left: 10px;
+    color: rgb(204, 204, 204);
+    transition: all 0.4s;
+
+}
+.footer__copyright-link:hover {
+    color: rgba(255,255,255);
+}
+/*стили для странички трансферов ====================================================*/
 .transfer__block {
     width: 100%;
     padding-bottom: 10px;
@@ -499,7 +536,6 @@ ul {
     padding: 8px;
     color: rgb(35, 82, 124);
     cursor: pointer;
-    display: none;
 }
 .transfer__balance {
     padding: 5px;
@@ -554,6 +590,10 @@ ul {
 .buy {
     opacity: 0.5;
 }
+/* прячем кнопку НАЗАД */
+.players__list-back {
+    display: block;
+}
 /* диалоговое окно на затемненном фоне popup window -------------------------------------------------------*/
 .popup__back {
     display: block;
@@ -578,48 +618,19 @@ ul {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-
-    text-align: center;
-    
+    text-align: center;   
 }
-
 /* конец стилей для трансферов */
 
-
-
-/* переделываем ленту новостей и таблицу топ5 лиг европы, чтобы не было прокрутки внизу и табличка растягивалась на всю ширину экрана */
-@media screen and (max-width: 640px) {
-    .content__bottom {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+/* адаптив центрального блока с таблицами лучших игроков и команд */
+@media screen and (max-width: 1280px) {
+    .main__content-center {
+        flex-wrap: wrap;
     }
-    .clubs__standing-table {
-        width: 100%;
+    .main__content-center .main__content-wrapper {
+        width: 49%;
     }
 }
-
-.footer__inner {
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-.footer__copyright {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    color: rgb(204, 204, 204);
-}
-.footer__copyright-link {
-    margin-left: 10px;
-    color: rgb(204, 204, 204);
-    transition: all 0.4s;
-
-}
-.footer__copyright-link:hover {
-    color: rgba(255,255,255);
-}
-
 @media screen and (max-width: 768px) {
     .header__inner {
         display: flex;
@@ -633,22 +644,44 @@ ul {
         left: 0;
         top: 0;
     }
+    /* всплывающее меню с затемнением фона */
     .navigation .span__title {
         display: none;
     }
-    .main__menu .navigation__list {
+    .main__menu .navigation {
         position: fixed;
-        left: 0;
         top: 0;
+        bottom: 0;
+        overflow-y: auto;
         min-width: 200px;
         height: 100%;
         padding: 10px;
-        background-color: rgba(255,255,255);
+        background-color: rgb(248, 248, 248);
         box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
-        display: none;
-        z-index: 100;   /* перекрываем липкий header */
+        display: block;
+        z-index: 1000;
+        overflow-y: auto;
     }
-    .navigation__list::before { /* добавляем название сайта на верх всплывающего мобильного меню */
+    .navigation__list-item:first-child {
+        font-size: 18px;
+        line-height: 20px;
+        padding-top: 17px;
+        padding-bottom: 35px;
+        border-bottom: none;
+        display: block;
+        text-decoration: none;
+        text-align: left;
+    }
+    .main__section-shadow {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color:rgba(0, 0, 0, 0.4);
+        z-index: 101;
+    }
+    /* .navigation__list::before { 
         content: 'Openball';
         height: 30px;
         padding: 7px 14px;
@@ -661,13 +694,13 @@ ul {
         text-align: left;
         cursor: pointer;
     }
-    .header::after {  /* тень на остальной экран после всплывания мобильного меню */
+    .header::after {  
         content: "";
         background-color: rgb(0, 0, 0, 0.3);
         position: fixed;
-        inset: 0px; /* вот это я так и не понял зачем, но без этого свойства тень не выходит */
+        inset: 0px; 
         display: none;
-    }
+    } */
     .navigation__list-item {
         height: 30px;
         padding: 7px 14px;
@@ -680,29 +713,29 @@ ul {
     .navigation__list-item:hover {
         background-color: rgb(238, 238, 238);
     }
-    .news__inner {
-        display: flex;
+    /* адаптив для новостного блока */
+    .main__content-top .main__content-inner {
         flex-direction: column;
+    }
+    .main__content-top .news__content {
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgb(238, 238, 238);
+        margin-bottom: 5px;
+    }
+    .main__content-top .news__content:last-child {
+        border-bottom: none;
         margin-bottom: 0;
     }
-    
-    .news__inner .news__content {
+    .main__content-top .news__content {
         width: 100%;
-        margin-bottom: 10px;
-        border-bottom: 1px solid rgb(238, 238, 238);
     }
-    .news__inner .news__content:last-child {
-        border-bottom: none;
-    }
-    .news__block .news__content:not(:last-child) {
-        margin-right: 0;
-    }
-
+    
 }
 
 @media screen and (max-width: 640px) {
-    .top__inner {
+    .top__section {
         position: relative;
+        z-index: -1;
     }
     .top__info {
         position: absolute;
@@ -722,17 +755,12 @@ ul {
     .top__main {
         margin-bottom: 30px;
     }
-    .top__info-reminder {
-        background-color: rgba(255,255,255);
-        border-bottom: none;
-        min-width: auto;
-    }
-    .top__info-reminder .span__title {
+    .span__title-reminder {
         text-transform: none;
         margin-bottom: 0;
         background-color: rgba(255,255,255);
         padding: 0;
-        
+        border-bottom: none;
     }
     .top__info-counter p {
         font-size: 14px;
@@ -741,6 +769,17 @@ ul {
     .days-counter {
         font-size: 18px;
         font-weight: bold;
+    }
+    /* адаптив для таблиц в центральном блоке */
+    .main__content-center .main__content-wrapper {
+        width: 100%;
+    }
+    /* адаптив для ленты новостей с табицел лиг */
+    .main__content-bottom {
+        flex-direction: column;
+    }
+    .main__content-bottom .main__content-wrapper:last-child {
+        width: 100%;
     }
     /* адаптив для блока трансферов -------------------------------------------------------*/
     .transfer__main {
@@ -765,14 +804,15 @@ ul {
     
 }
 @media screen and (max-width: 400px) {
+    .top__info-counter p {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .logo-openball {
         width: 100px;
     }
     .top__title h1 {
         font-size: 14px;
-    }
-    .top__section {
-        background-size: 390px auto;
     }
     .message__text {
         display: none;

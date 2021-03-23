@@ -463,12 +463,13 @@ ul {
     font-size: 12px;
     border-spacing: 1px;
 }
-.club__table-header {
+.transfer__table-title {
     display: flex;
     justify-content: space-between;
 }
-.table__head {
+.transfer__table-header {
     padding: 5px 10px;
+    background-color:rgb(27, 96, 155);
     color: white;
 }
 .transfer__table td {
@@ -550,9 +551,6 @@ ul {
 }
 .select__row {
     width: 200px;
-}
-.table__head {
-    background-color:rgb(27, 96, 155);
 }
 .short__cell {
     width: 40px;
@@ -757,7 +755,7 @@ ul {
     .transfer__main-box:last-child .transfer__table {
         display: none;
     } 
-    .club__table-header--icon {
+    .transfer__table-title--icon {
         display: flex;
     }
     .plus__logo {

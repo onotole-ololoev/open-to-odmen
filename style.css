@@ -271,10 +271,12 @@ ul {
     display: block;
     padding: 5px 7px;
     border-bottom: 1px solid rgb(238, 238, 238);
-    text-align: left;  
+    text-align: left;
+    transition: none; 
 }
 .navigation__list-item--link:hover {
     background-color: rgb(238, 238, 238);
+    text-decoration: none;
 }
 .navigation__list-item--link {
     position: relative;    
@@ -658,7 +660,7 @@ ul {
         text-decoration: none;
         text-align: left;
     }
-    .main__section-shadow {
+    .main__menu-shadow {
         position: fixed;
         top: 0;
         right: 0;

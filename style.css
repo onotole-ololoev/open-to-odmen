@@ -12,21 +12,13 @@ html {
     margin: 0;
 }
 a {
-    text-decoration: none;
-}
-
-
-/* a {
     color: #23527c;
     text-decoration: underline transparent;
     transition: all 0.5s;
-  }
-  
-  a:hover {
+}
+a:hover {
     text-decoration: underline;
-  }
-*/
-
+}
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 13px;
@@ -201,10 +193,14 @@ body {
     padding: 10px;
 
 }
+.top__info-counter {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 .top__info-counter p {
     font-size: 20px;
 }
-.days-counter {
+.top__info-counter p span {
     font-size: 40px;
     font-weight: bold;
     margin-left: 5px;
@@ -732,7 +728,7 @@ ul {
         font-size: 14px;
         
     }
-    .days-counter {
+    .top__info-counter p span {
         font-size: 18px;
         font-weight: bold;
     }
@@ -767,6 +763,10 @@ ul {
     
 }
 @media screen and (max-width: 400px) {
+    .top__info-counter {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
     .top__info-counter p {
         padding-left: 0;
         padding-right: 0;
@@ -780,7 +780,7 @@ ul {
     .message__text {
         display: none;
     }
-    .days-counter {
+    .top__info-counter p span {
         font-weight: normal;
         margin-left: 2px;
         margin-right: 2px;

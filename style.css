@@ -103,10 +103,11 @@ body {
     font-weight: bold;
     margin-left: 15px;
     color: rgb(204, 204, 204);
-    transition: all 0.4s;
+    transition: none;
 }
 .header__link:hover {
     color: rgba(255,255,255);
+    text-decoration: none;
 }
 .header__link-text {
     margin-left: 5px;
@@ -385,6 +386,9 @@ ul {
 .main__content-bottom .main__content-inner {
     flex-direction: column;
     padding-bottom: 5px;
+}
+.main__content-bottom .main__content-wrapper:last-child .span__link {
+    transition: none;
 }
 .news__comment {
     display: flex;

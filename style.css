@@ -385,13 +385,14 @@ ul {
 .main__content-bottom .main__content-inner {
     flex-direction: column;
     padding-bottom: 5px;
-    border-bottom: 1px solid rgb(238, 238, 238);
-}
-.main__content-bottom .main__content-inner:last-child {
-    border-bottom: none;
 }
 .news__comment {
     display: flex;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.main__content-bottom .main__content-inner:last-child .news__comment {
+    border-bottom: none;
 }
 .main__content-bottom {
     display: flex;

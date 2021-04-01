@@ -615,6 +615,16 @@ ul {
 }
 /* конец стилей для трансферов */
 
+/* стили для блока авторизации ====================================================================== */
+.authorize__block {
+    justify-content: center;
+}
+.login__form {
+    padding-top: 10px;
+    margin-right: 40px;
+}
+
+
 /* адаптив центрального блока с таблицами лучших игроков и команд */
 @media screen and (max-width: 1280px) {
     .main__content-center {

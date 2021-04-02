@@ -74,29 +74,32 @@
           <div class="main__content-wrapper">
             <span class='span__title'><a class='span__link' href="#">АВТОРИЗАЦИЯ</a></span>
             <div class="main__content-inner authorize__block">
+              <div class="authorize__block-content">
                 <form class="login__form">
                     <div class="login__form-title">Авторизация:</div>
                     <div class="login__form-item">
-                        <img class="login__form-pic" src="images/addon.PNG"><input class="login__form-input" type="text" placeholder="Логин">
+                        <img class="login__form-pic" src="images/addon.PNG"><input class="login__form-input" type="text" name="login" placeholder="Логин или e-mail">
                     </div>
                     <div class="login__form-item">
-                        <img class="login__form-pic" src="images/eye.PNG"><input class="login__form-input" type="password" placeholder="Пароль">
+                        <img class="login__form-pic" src="images/eye.PNG"><input class="login__form-input" type="password" name="password" placeholder="Пароль">
                     </div>
+                    <div class="login__form-error">Неправильный логин или пароль</div>
                     <div class="login__form-item">
-                        <label for=""> 
-                            <input class="login__form-check" type="checkbox">Запомнить меня
+                        <label class="login__form-label" for="checkbox"> 
+                            <input class="login__form-check" type="checkbox" id="checkbox">Запомнить меня
                         </label>
                     </div>
-                    <button class="login__form-btn enter__btn" type="submit"><img class="enter__btn-pic" src="#" alt="...">Войти</button>
+                    <button class="login__form-btn enter__btn" type="submit"><img class="enter__btn-pic" src="images/enter-btn.PNG" alt="...">Войти</button>
                 </form>
                 <a href="#" class="login__form-link">Забыли пароль?</a>
                 <a href="#" class="login__form-link">Регистрация</a>
-                <form class="login__form">    
+            </div>
+                <div class="authorize__block-content">    
                     <div class="login__form-title">Войти как пользователь:</div>
-                    <a class="login__form-btn fb__btn" type="submit"><img class="socials__btn-pic" src="images/fb-logo.PNG" alt="...">Facebook</a>
-                    <a class="login__form-btn vk__btn" type="submit"><img class="socials__btn-pic" src="images/vk-logo.PNG" alt="...">Вконтакте</a>
-                    <a class="login__form-btn ok__btn" type="submit"><img class="socials__btn-pic" src="images/ok-logo.PNG" alt="...">Одноклассники</a>
-                </form>
+                    <div class="login__form-btn fb__btn"><img class="enter__btn-pic" src="images/fb-logo.PNG" alt="...">Facebook</div>
+                    <div class="login__form-btn vk__btn"><img class="enter__btn-pic" src="images/vk-logo.PNG" alt="...">Вконтакте</div>
+                    <div class="login__form-btn ok__btn"><img class="enter__btn-pic" src="images/ok-logo.PNG" alt="...">Одноклассники</div>
+                </div>
             </div>
           </div>
         </div>

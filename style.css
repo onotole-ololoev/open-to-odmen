@@ -619,9 +619,116 @@ ul {
 .authorize__block {
     justify-content: center;
 }
-.login__form {
+.authorize__block-content {
+    display: flex;
+    flex-direction: column;
     padding-top: 10px;
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: left;
+    min-width: 200px;
+    
+}
+.login__form-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.login__form-item {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    height: 34px;
+}
+.login__form-pic {
+    display: block;
+    width: 40px;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 100%;
+}
+.login__form-error {
+    margin-bottom: 10px;
+    color:tomato;
+}
+.login__form-btn {
+    margin-bottom: 10px;
+}
+.login__form-link {
+    margin-top: 20px;
+}
+.login__form-input {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 100%;
+}
+.login__form-label {
+    display: flex;
+    align-items: center;
+}
+.login__form-check {
+    margin-right: 10px;
+}
+.login__form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    min-width: 250px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.enter__btn:hover {
+    background-color: #449d44;
+    border-color: #398439;
+}
+.enter__btn {
+    text-align: center;
+    justify-content: center;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    font-size: 14px;
+}
+.enter__btn-pic {
+    margin-right: 5px;
+}
+.fb__btn {
+    background-color: #324c86;
+}
+.vk__btn {
+    background-color: #4c81b7;
+}
+.ok__btn {
+    background-color: #F6881F;
+}
+.fb__btn:hover, .vk__btn:hover, .ok__btn:hover {
+    color: #eee;
 }
 
 

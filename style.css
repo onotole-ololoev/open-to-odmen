@@ -231,6 +231,7 @@ body {
     background-color: rgba(255,255,255);
     padding-left: 20px;
     padding-right: 20px;
+    min-height: calc(100vh - 230px);
 }
 ul {
     list-style: none;
@@ -729,6 +730,10 @@ ul {
 .enter__btn-pic {
     margin-right: 5px;
 }
+.login__form-links {
+    display: flex;
+    justify-content: space-around;
+}
 .fb__btn {
     background-color: #324c86;
 }
@@ -741,6 +746,7 @@ ul {
 .fb__btn:hover, .vk__btn:hover, .ok__btn:hover {
     color: #eee;
 }
+
 /* конец стилей для блока авторизации============================================== */
 
 /* адаптив центрального блока с таблицами лучших игроков и команд */
@@ -897,11 +903,29 @@ ul {
     }
     /* адаптив для страницы с авторизацией =================================================*/
     .authorize__block {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .authorize__block-content {
         max-width: 290px;
+    }
+    .login__form-btns {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+    }
+    .fb__btn,
+    .vk__btn,
+    .ok__btn {
+        min-width: 50px;
+        font-size: 0;
+    }
+    .login__form-btns .enter__btn-pic {
+        margin: 0 auto;
+    }
+    .vk__btn {
+        margin-right: 40px;
+        margin-left: 40px;
     }
 }
 @media screen and (max-width: 400px) {

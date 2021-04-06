@@ -749,6 +749,33 @@ ul {
 
 /* конец стилей для блока авторизации============================================== */
 
+
+/* стили для страницы с командами (универсальные таблицы) ==============================*/
+.unitable {
+    width: 100%;
+    background-color: white;
+    border-spacing: 1px;
+}
+
+.unitable__head-tr {
+    background-color: rgb(221, 221, 221);
+}
+.unitable__head-th {
+    position: sticky;
+    top: 40px;
+    background-color: rgb(221, 221, 221);
+    padding: 7px 5px;    
+}
+.unitable__body {
+    background-color: rgb(238, 238, 238);
+}
+.unitable__body-tr:nth-child(2n) {
+    background-color: rgb(221, 221, 221);
+}
+.unitable__body-td {
+    padding: 5px;
+}
+
 /* адаптив центрального блока с таблицами лучших игроков и команд */
 @media screen and (max-width: 1280px) {
     .main__content-center {

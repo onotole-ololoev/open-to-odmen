@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href='style.css'>
+    <title>Футбольная лига прогнозирования</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__inner">
+          <div class="hamburger__btn">
+            <div class="hamburger__btn-line"></div>
+            <div class="hamburger__btn-line"></div>
+            <div class="hamburger__btn-line"></div>
+          </div>
+          <div class="header__registration">
+            <a href="authorize.html" class="header__link"><img src="images/enter.PNG" alt="..."><span class="header__link-text">Вход</span></a>
+            <a href="#" class="header__link"><img src="images/registration.PNG" alt="..."><span class="header__link-text">Регистрация</span></a>
+          </div>
+          <div class="header__account">
+            <a href="#" class="header__link"><img src="images/message-icon.png" alt="..."><span class="message__counter message__unread">8</span><span class="message__text">Сообщения</span></a>
+            <a href="#" class="header__link"><img src="images/money-icon.png" alt="..."><span class="money__counter">15.8</span>Ob</a>
+            <div class="header__avatar"></div>
+          </div>
+          <div class="header__account-info">
+            <div class="user-name">Onotole Ololoev</div>
+            <div class="user-emale">tolya.tar@tut.by</div>
+            <div class="exit__block">
+              <a href="#" class="exit__link"><img src="images/exit.png" alt="..." class="exit-logo"></a>
+              <a href="#" class="exit__text">Выход</a>
+            </div>
+          </div>
+      </div>    
+    </header>
+    <div class="top__section">
+          <div class="top__main"> 
+            <div class="top__logo"><a href="index.html"><img src="images/logo.PNG" alt="logo" class="logo-openball"></a></div>
+            <div class="top__title"><h1>Футбольная<br>Лига<br>Прогнозирования</h1></div>
+          </div>      
+          <div class="top__info">
+            <span class='span__title span__title-reminder'>До старта тура:</span>
+            <div class="top__info-counter"><p>менее<span>24</span>недель</p></div>
+            <div class="coupon"><a href="#" class="coupon__link">Сделай ставку</a></div>
+          </div>
+    </div>
+    <div class="main__section">
+          <div class="main__menu">
+            <div class="main__menu-shadow"></div>
+            <nav class='navigation'>
+              <span class='span__title'>Меню</span> 
+              <ul class='navigation__list'>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='index.html'>Openball</a></li>   
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>О лиге</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Правила</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='transfers.html'>Трансфер<span class="notification">3</span></a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link active' href='calendar.html'>Календарь<span class="notification">34</span></a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Статистика тура</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Fantasy</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Bet Game</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Турниры</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Игровые Дни</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='teams.html'>Команды</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Рекорды</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Обсуждения<span class="notification">3235</span></a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Online</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="transfer__block">
+              <span class='span__title'><a class='span__link' href="#">КАЛЕНДАРЬ</a></span>
+              <div class="calendar__main">
+                <table class="unitable bord-bott">
+                  <caption class="unitable__title">Приглашения на товарищеские игры</caption>
+                    <thead class="unitable__head">
+                        <tr class="unitable__head-tr">
+                            <th class="unitable__head-th" align="center">Дата</th>
+                            <th class="unitable__head-th" align="center">Кто приглашает</th>
+                            <th class="unitable__head-th" align="center">Текст</th>
+                            <th class="unitable__head-th" align="center"></th>
+                            <th class="unitable__head-th" align="center" title="Играть на Ob-ы"><img src="images/money-icon.png" alt="..." class="unitable__money"></th>
+                            <th class="unitable__head-th" align="center" title="Домашнее поле">Д</th>
+                            <th class="unitable__head-th" align="center" title="Нейтральное поле">Н</th>
+                            <th class="unitable__head-th" align="center" title="Гостевое поле">Г</th>
+                            <th class="unitable__head-th" align="center"></th>
+                            <th class="unitable__head-th" align="center" title="Удалить матч">Уд.</th>
+                        </tr>
+                    </thead>
+                    <tbody class="unitable__body">
+                        <tr class="unitable__body-tr">
+                            <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                            <td class="unitable__body-td" align="center" title="Кто приглашает">В рот Мне Ноги Юнайтед</td>
+                            <td class="unitable__body-td" align="center"></td>
+                            <td class="unitable__body-td" align="center" title="Товарищеский матч"><img src="images/friendly-pic.PNG" alt="..." class="unitable__pic"></td>
+                            <td class="unitable__body-td" align="center" title="Играть на Ob-ы">150,45 ob.</td>
+                            <td class="unitable__body-td" align="center" title="Домашнее поле"><img src="images/hands-pic.PNG" alt="..." class="unitable__pic"></td>
+                            <td class="unitable__body-td" align="center" title="Нейтральное поле"><img src="images/hands-pic.PNG" alt="..." class="unitable__pic"></td>
+                            <td class="unitable__body-td" align="center" title="Гостевое поле"><img src="images/hands-pic.PNG" alt="..." class="unitable__pic"></td>
+                            <td class="unitable__body-td" align="center" title="Хз"><img src="images/people-pic.PNG" alt="..." class="unitable__pic"></td>
+                            <td class="unitable__body-td" align="center" title="Удалить матч"><img src="images/btn_delete.gif" alt="..." class="unitable__pic"></td>
+                        </tr>
+                        <tr class="unitable__body-tr">
+                          <td class="unitable__body-td" align="center" title="Дата">09.04 Пнд</td>
+                          <td class="unitable__body-td" align="center" title="Кто приглашает">Васильки Юнайтед</td>
+                          <td class="unitable__body-td" align="center"></td>
+                          <td class="unitable__body-td" align="center" title="Товарищеский матч"><img src="images/friendly-pic.PNG" alt="..." class="unitable__pic"></td>
+                          <td class="unitable__body-td" align="center" title="Играть на Ob-ы">150,45 ob.</td>
+                          <td class="unitable__body-td" align="center" title="Домашнее поле"><img src="images/hands-pic.PNG" alt="..." class="unitable__pic"></td>
+                          <td class="unitable__body-td" align="center" title="Нейтральное поле"><img src="images/hands-pic.PNG" alt="..." class="unitable__pic"></td>
+                          <td class="unitable__body-td" align="center" title="Гостевое поле"><img src="images/hands-pic.PNG" alt="..." class="unitable__pic"></td>
+                          <td class="unitable__body-td" align="center" title="Хз"><img src="images/people-pic.PNG" alt="..." class="unitable__pic"></td>
+                          <td class="unitable__body-td" align="center" title="Удалить матч"><img src="images/btn_delete.gif" alt="..." class="unitable__pic"></td>
+                      </tr>
+                      <tr class="unitable__body-tr">
+                        <td class="unitable__body-td" align="center" title="Дата">12.04 Птн</td>
+                        <td class="unitable__body-td" align="center" title="Кто приглашает">Вафлежуй Юнайтед</td>
+                        <td class="unitable__body-td" align="center"></td>
+                        <td class="unitable__body-td" align="center" title="Товарищеский матч"><img src="images/friendly-pic.PNG" alt="..." class="unitable__pic"></td>
+                        <td class="unitable__body-td" align="center" title="Играть на Ob-ы">150,45 ob.</td>
+                        <td class="unitable__body-td" align="center" title="Домашнее поле"><img src="images/hands-pic.PNG" alt="..." class="unitable__pic"></td>
+                        <td class="unitable__body-td" align="center" title="Нейтральное поле"><img src="images/hands-pic.PNG" alt="..." class="unitable__pic"></td>
+                        <td class="unitable__body-td" align="center" title="Гостевое поле"><img src="images/hands-pic.PNG" alt="..." class="uunitable__pic"></td>
+                        <td class="unitable__body-td" align="center" title="Хз"><img src="images/people-pic.PNG" alt="..." class="unitable__pic"></td>
+                        <td class="unitable__body-td" align="center" title="Удалить матч"><img src="images/btn_delete.gif" alt="..." class="unitable__pic"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="calendar__arrows">
+                  <div class="calendar__arrows-item"><img src="images/arrow-left.png" alt="..." class="calendar__arrows-pic">Позже</div>
+                  <div class="calendar__arrows-item">Раньше<img src="images/arrow-right.png" alt="..." class="calendar__arrows-pic"></div>
+                </div>
+                <table class="unitable">
+                  <thead class="unitable__head">
+                      <tr class="unitable__head-tr">
+                          <th class="unitable__head-th" align="center">Дата</th>
+                          <th class="unitable__head-th" align="center" title="Поле">Хоз</th>
+                          <th class="unitable__head-th" align="center">Соперник</th>
+                          <th class="unitable__head-th" align="center">Турнир</th>
+                          <th class="unitable__head-th" align="center"></th>
+                          <th class="unitable__head-th" align="center" title="Блокировка">Блок.</th>
+                          <th class="unitable__head-th" align="center">Результат</th>
+                      </tr>
+                  </thead>
+                  <tbody class="unitable__body">
+                    <tr class="unitable__body-tr">
+                        <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                        <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                        <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Змагары Юнайтед</a></td>
+                        <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                        <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                        <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                        <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a><img src="images/disc-pic.PNG" alt="..." class="unitable__pic"></td>
+                    </tr>
+                    <tr class="unitable__body-tr">
+                      <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                      <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Ябатьки Юнайтед</a></td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                      <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                      <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link unitable__red" href="#">10-0</a></td>
+                    </tr>
+                    <tr class="unitable__body-tr">
+                      <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                      <td class="unitable__body-td" align="center" title="Домашнее поле"></td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a><img src="images/gram-pic.PNG" alt="..." class="unitable__pic"></td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a></td>
+                      <td class="unitable__body-td" align="center" title="История игр"></td>
+                      <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a></td>
+                    </tr>
+                    <tr class="unitable__body-tr">
+                      <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                      <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Змагары Юнайтед</a></td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                      <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                      <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">0-2</a></td>
+                    </tr>
+                    <tr class="unitable__body-tr">
+                      <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                      <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Ябатьки Юнайтед</a></td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                      <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                      <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">10-0</a></td>
+                    </tr>
+                    <tr class="unitable__body-tr">
+                      <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                      <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Змагары Юнайтед</a></td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                      <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                      <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                      <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a><img src="images/disc-pic.PNG" alt="..." class="unitable__pic"></td>
+                  </tr>
+                  <tr class="unitable__body-tr">
+                    <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                    <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Ябатьки Юнайтед</a></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                    <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                    <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link unitable__red" href="#">10-0</a></td>
+                  </tr>
+                  <tr class="unitable__body-tr">
+                    <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                    <td class="unitable__body-td" align="center" title="Домашнее поле"></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a><img src="images/gram-pic.PNG" alt="..." class="unitable__pic"></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a></td>
+                    <td class="unitable__body-td" align="center" title="История игр"></td>
+                    <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a></td>
+                  </tr>
+                  <tr class="unitable__body-tr">
+                    <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                    <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Змагары Юнайтед</a></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                    <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                    <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">0-2</a></td>
+                  </tr>
+                  <tr class="unitable__body-tr">
+                    <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                    <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Ябатьки Юнайтед</a></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                    <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                    <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">10-0</a></td>
+                  </tr>
+                  <tr class="unitable__body-tr">
+                    <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                    <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Змагары Юнайтед</a></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                    <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                    <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a><img src="images/disc-pic.PNG" alt="..." class="unitable__pic"></td>
+                  </tr>
+                  <tr class="unitable__body-tr">
+                    <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                    <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Ябатьки Юнайтед</a></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                    <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                    <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link unitable__red" href="#">10-0</a></td>
+                  </tr>
+                  <tr class="unitable__body-tr">
+                    <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                    <td class="unitable__body-td" align="center" title="Домашнее поле"></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a><img src="images/gram-pic.PNG" alt="..." class="unitable__pic"></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a></td>
+                    <td class="unitable__body-td" align="center" title="История игр"></td>
+                    <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#"></a></td>
+                  </tr>
+                  <tr class="unitable__body-tr">
+                    <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                    <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Змагары Юнайтед</a></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                    <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                    <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">0-2</a></td>
+                  </tr>
+                  <tr class="unitable__body-tr">
+                    <td class="unitable__body-td" align="center" title="Дата">06.04 Втр</td>
+                    <td class="unitable__body-td" align="center" title="Домашнее поле">Д</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Ябатьки Юнайтед</a></td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">Open Nation Cup</a></td>
+                    <td class="unitable__body-td" align="center" title="История игр"><img src="images/history-pic.PNG" alt="..." class="unitable__pic"></td>
+                    <td class="unitable__body-td" align="center" title="Блокировка">06.04 10:22</td>
+                    <td class="unitable__body-td" align="center"><a class="unitable__body-link" href="#">10-0</a></td>
+                  </tr>
+                  </tbody>
+                </table>  
+              </div>
+          </div>
+        </div>
+    
+    </div>
+    </div>
+    <footer class='footer'>
+        <div class="footer__copyright">
+          <span class='footer__copyright-text'>Copyright © 2007-2021</span>
+          <a href="#" class='footer__copyright-link'>OpenBall</a>
+        </div>
+    </footer>
+  </div>
+ <!--  <script src="script.js"></script> -->
+</body>
+</html>

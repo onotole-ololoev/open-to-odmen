@@ -461,12 +461,14 @@ ul {
 }
 .transfer__nav {
     display: flex;
-    padding: 5px;
+    margin-bottom: 10px;
+   /* padding: 5px; */
     /*margin: 10px 0px; */
     border-bottom: 1px solid rgb(238, 238, 238);
 }
 .transfer__heading {
-    margin: 10px 0px;
+   /* margin: 10px 0px; */
+   padding: 10px 0;
 }
 .transfer__heading-link {
     padding: 2px 10px;
@@ -760,6 +762,9 @@ ul {
     border-spacing: 1px;
     white-space: nowrap;
 }
+.bord-bott {
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
 
 .unitable__head-tr {
     background-color: rgb(221, 221, 221);
@@ -778,8 +783,45 @@ ul {
 }
 .unitable__body-td {
     padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80px;
 }
+.unitable__pic {
+    cursor: pointer;
+}
+.unitable__red {
+    color: red;
+}
+.min130 {
+    min-width: 130px;
+}
+/* конец стилей для блока универсальныых таблиц ========================== */
 
+/*стили для странички Календаря игр ========================== */
+.unitable__title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+}
+.calendar__arrows {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.calendar__arrows-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #1b609b;
+}
+.calendar__arrows-pic {
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
 /* адаптив центрального блока с таблицами лучших игроков и команд */
 @media screen and (max-width: 1280px) {
     .main__content-center {
@@ -875,6 +917,16 @@ ul {
     }
     
 }
+@media screen and (max-width: 1100px) {
+    .hidden1100 {
+        display: none;
+    }
+}
+@media screen and (max-width: 960px) {
+    .hidden960 {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 640px) {
     .top__section {
@@ -968,6 +1020,12 @@ ul {
         display: none;
     }
 }
+@media screen and (max-width: 490px) {
+    .hidden490 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 442px) {
     .transfer__nav {
         display: flex;
@@ -1006,7 +1064,11 @@ ul {
     .popup__window {
         min-width: 310px;
     }
+    .min50 {
+        min-width: 50px;
+    }
 }
+
 @media screen and (max-width: 320px) {
     .hidden320 {
         display: none;

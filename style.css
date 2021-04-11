@@ -826,6 +826,17 @@ ul {
 .fantasy__title {
     text-transform: lowercase;
 }
+.fantasy__main {
+    display: flex;
+    justify-content: space-between;
+}
+.fantasy__main-block:first-child {
+    width: 100%;
+    margin-right: 30px;
+}
+.fantasy__main-block:last-child {
+    width: 35%;
+}
 .fantasy__caption {
     display: flex;
     align-items: center;
@@ -840,6 +851,38 @@ ul {
 }
 .w55 {
     width: 55px;
+}
+.fantasy__best {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.fantasy__best-title {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.fantasy__best-inner {
+    display: flex;
+    min-height: 137px;
+}
+.fantasy__best-pic {
+    background-image: url('images/19.jpg');
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    width: 100px;
+    margin-right: 5px;
+}
+.fantasy__best-info {
+    
+}
+.fantasy__best-player,
+.fantasy__best-userteam {
+    margin-bottom: 10px;
+}
+.fantasy__best-result-item {
+    font-size: 30px;
+    color: rgb(0, 170, 50);
 }
 
 /* адаптив центрального блока с таблицами лучших игроков и команд */

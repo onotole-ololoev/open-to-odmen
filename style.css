@@ -822,6 +822,26 @@ ul {
     margin-right: 5px;
     margin-left: 5px;
 }
+/* стили для странички фэнтазей ============================================ */
+.fantasy__title {
+    text-transform: lowercase;
+}
+.fantasy__caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.unitable__pic {
+   margin-right: 5px;
+}
+.w45 {
+    width: 45px;
+}
+.w55 {
+    width: 55px;
+}
+
 /* адаптив центрального блока с таблицами лучших игроков и команд */
 @media screen and (max-width: 1280px) {
     .main__content-center {

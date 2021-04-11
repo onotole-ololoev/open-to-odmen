@@ -841,9 +841,9 @@ ul {
     width: 100%;
     margin-right: 30px;
 }
-.fantasy__main-block:last-child {
+/*.fantasy__main-block:last-child {
     width: 35%;
-}
+} */
 .fantasy__caption {
     display: flex;
     align-items: center;
@@ -897,6 +897,9 @@ ul {
     font-size: 30px;
     color: rgb(0, 170, 50);
 }
+.w35percent {
+    width: 35%;
+}
 
 /* адаптив центрального блока с таблицами лучших игроков и команд */
 @media screen and (max-width: 1280px) {
@@ -924,7 +927,7 @@ ul {
     }
 }
 @media screen and (max-width: 880px) {
-    .fantasy__main-block:last-child {
+    .fantasy__main-block.w35percent {
         display: none;
     }
     .fantasy__main-block:first-child {

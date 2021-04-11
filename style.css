@@ -788,6 +788,10 @@ ul {
     text-overflow: ellipsis;
     max-width: 80px;
 }
+.td-pic {
+    display: flex;
+    align-items: center;
+}
 .unitable__pic {
     cursor: pointer;
 }
@@ -841,7 +845,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .fantasy__caption-date {
     font-weight: bold;

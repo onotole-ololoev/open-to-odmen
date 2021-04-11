@@ -801,6 +801,9 @@ ul {
 .min130 {
     min-width: 130px;
 }
+.w140 {
+    width: 140px;
+}
 /* конец стилей для блока универсальныых таблиц ========================== */
 
 /*стили для странички Календаря игр ========================== */
@@ -881,7 +884,7 @@ ul {
     margin-right: 5px;
 }
 .fantasy__best-info {
-    
+    width: 131px;
 }
 .fantasy__best-item{
     margin-bottom: 10px;
@@ -904,9 +907,28 @@ ul {
         width: 49%;
     }
 }
+@media screen and (max-width: 1100px) {
+    .hidden1100 {
+        display: none;
+    }
+}
+@media screen and (max-width: 990px) {
+    .hidden990 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .hidden960 {
         display: none;
+    }
+}
+@media screen and (max-width: 880px) {
+    .fantasy__main-block:last-child {
+        display: none;
+    }
+    .fantasy__main-block:first-child {
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 768px) {
@@ -990,17 +1012,6 @@ ul {
     }
     
 }
-@media screen and (max-width: 1100px) {
-    .hidden1100 {
-        display: none;
-    }
-}
-@media screen and (max-width: 960px) {
-    .hidden960 {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 640px) {
     .top__section {
         flex-direction: column;
@@ -1097,15 +1108,25 @@ ul {
     .hidden490 {
         display: none;
     }
-}
+    .fantasy__caption-item {
+        display: none;
+    }
 
 @media screen and (max-width: 442px) {
     .transfer__nav {
         display: flex;
         flex-wrap: wrap;
+        border-bottom: none;
     }
     .transfer__heading-link {
         white-space: nowrap;
+    }
+    .transfer__heading {
+        width: 50%;
+        border-bottom: 1px solid rgb(238, 238, 238);
+    }
+    .transfer__heading:last-child {
+        border-right: 1px solid rgb(238, 238, 238);
     }
 }
 

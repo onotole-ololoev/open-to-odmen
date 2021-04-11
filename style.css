@@ -843,6 +843,9 @@ ul {
     justify-content: space-between;
     margin-bottom: 5px;
 }
+.fantasy__caption-date {
+    font-weight: bold;
+}
 .unitable__pic {
    margin-right: 5px;
 }
@@ -876,11 +879,14 @@ ul {
 .fantasy__best-info {
     
 }
-.fantasy__best-player,
-.fantasy__best-userteam {
+.fantasy__best-item{
     margin-bottom: 10px;
 }
-.fantasy__best-result-item {
+.fantasy__best-club {
+    display: flex;
+    align-items: center;
+}
+.fantasy__best-result {
     font-size: 30px;
     color: rgb(0, 170, 50);
 }

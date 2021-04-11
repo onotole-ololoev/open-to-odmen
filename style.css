@@ -1131,6 +1131,9 @@ ul {
     .transfer__heading:last-child {
         border-right: 1px solid rgb(238, 238, 238);
     }
+    .hidden442 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 400px) {

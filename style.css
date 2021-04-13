@@ -125,6 +125,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    display: none; /* спрятали всплывающее окно входа-выхода */
 }
 .user-name {
     font-size: 15px;

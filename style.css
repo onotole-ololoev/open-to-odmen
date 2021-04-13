@@ -553,9 +553,9 @@ ul {
     color: white;
     cursor: pointer;
 }
-.transfer_btn-activated {
+.btn-disable {
     opacity: 0.2;
-    cursor: default;
+    cursor: auto;
 }
 .players__list {
     display: flex;
@@ -839,7 +839,6 @@ ul {
 }
 .fantasy__main-block:first-child {
     width: 100%;
-    margin-right: 30px;
 }
 /*.fantasy__main-block:last-child {
     width: 35%;
@@ -899,6 +898,34 @@ ul {
 }
 .w35percent {
     width: 35%;
+    margin-left: 30px;
+}
+.nav__bottom {
+    margin-top: 10px;
+}
+.nav__bottom-list {
+    display: flex;
+    justify-content: center;
+}
+.nav__bottom-list-item--link {
+    margin: 2px;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    color: #636363;
+    font-size: 11px;
+    padding: 3px 6px;
+    text-decoration: none;
+}
+.nav__bottom-list-item--link:hover {
+    background: #636363;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.btn-disable .nav__bottom-list-item--link:hover {
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    color: #636363;
+    cursor:auto;
 }
 
 /* адаптив центрального блока с таблицами лучших игроков и команд */

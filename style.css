@@ -841,6 +841,10 @@ ul {
 .fantasy__main-block:first-child {
     width: 100%;
 }
+.fantasy__block-wrapper {
+    position: sticky;
+    top: 40px;
+}
 /*.fantasy__main-block:last-child {
     width: 35%;
 } */

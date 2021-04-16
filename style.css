@@ -958,9 +958,6 @@ ul {
     .fantasy__main-block.w35percent {
         display: none;
     }
-    .fantasy__main-block:first-child {
-        margin-right: 0;
-    }
 }
 @media screen and (max-width: 768px) {
     .header__inner {

@@ -1184,6 +1184,9 @@ ul {
         margin-left: 2px;
         margin-right: 2px;
     }
+    .hidden400 {
+        display: none;
+    }
 }
 @media screen and (max-width: 360px) {
     .popup__window {

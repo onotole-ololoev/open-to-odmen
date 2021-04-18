@@ -779,6 +779,10 @@ ul {
 .unitable__body {
     background-color: rgb(238, 238, 238);
 }
+.unitable__foot {
+    background-color: rgb(221, 221, 221);
+}
+
 .unitable__body-tr:nth-child(2n) {
     background-color: rgb(221, 221, 221);
 }
@@ -931,6 +935,13 @@ ul {
     border: 1px solid #cccccc;
     color: #636363;
     cursor:auto;
+}
+/* ====================== стили для БЕТГЕЙМА!!!!!!!!!!!!!!! =================================== */
+.red {
+    color: red;
+}
+.green {
+    color: green;
 }
 
 /* адаптив центрального блока с таблицами лучших игроков и команд */

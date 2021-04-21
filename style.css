@@ -454,72 +454,50 @@ ul {
     color: rgba(255,255,255);
 }
 /*стили для странички трансферов ====================================================*/
-.transfer__block {
+.uniblock {
     width: 100%;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
-.transfer__nav {
+.uniblock__nav {
     display: flex;
     margin-bottom: 10px;
    /* padding: 5px; */
     /*margin: 10px 0px; */
     border-bottom: 1px solid rgb(238, 238, 238);
 }
-.transfer__heading {
+.uniblock__heading {
    /* margin: 10px 0px; */
    padding: 10px 0;
 }
-.transfer__heading-link {
+.uniblock__heading-link {
     padding: 2px 10px;
     color: #23527c;
 }
-.transfer__heading:not(:last-child) { 
+.uniblock__heading:not(:last-child) { 
     border-right: 1px solid rgb(238, 238, 238);
 }
-.transfer__main {
+.uniblock__main {
     display: flex;
     justify-content: space-between;
 }
-.transfer__main-box {
-    width: 49%;
+.uniblock__main-section {
+   width: 100%;
 }
-.transfer__table {
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-    border-spacing: 1px;
-}
-.transfer__table-title {
+.unitable__title {
     display: flex;
     justify-content: space-between;
+    
 }
-.transfer__table-header {
-    padding: 5px 10px;
+.unitable__header {
+    padding: 5px;
     background-color:rgb(27, 96, 155);
     color: white;
-}
-.transfer__table td {
-    padding: 3px;
-}
-.transfer__table tr td:nth-child(3),
-.transfer__table tr td:nth-child(4) {
-    width: 40px;
-} 
-.short__cell {
-    width: 30px;
-}
-.transfer__table tr {
-    background-color: rgb(221, 221, 221);
-}
-.transfer__table tr:nth-child(2n) {
-    background-color: rgb(238, 238, 238);
 }
 .keeper__logo {
     width: 15px;
     cursor: pointer;
-    margin-right: 2px;
 }
 .plus__logo {
     width: 15px;
@@ -531,11 +509,11 @@ ul {
 .add__logo {
     cursor: pointer;
 }
-.transfer__table-player,
+.unitable-player,
 .club__table-team {
     text-align: left;
 }
-.transfer__main-aside {
+.uniblock__main-aside {
     margin: 5px 0;
     padding: 8px;
     border: 1px solid rgb(221, 221, 221);
@@ -576,12 +554,12 @@ ul {
 .select__row {
     width: 200px;
 }
-.transfer__table-bottom {
+.unitable-bottom {
     display: flex;
     justify-content: space-around;
 }
-.transfer__table-bottom span:nth-child(1),
-.transfer__table-bottom span:nth-child(3) {
+.unitable-bottom span:nth-child(1),
+.unitable-bottom span:nth-child(3) {
     cursor: pointer;
 }
 .active {
@@ -589,6 +567,9 @@ ul {
 }
 .buy {
     opacity: 0.5;
+}
+.center {
+    text-align: center;
 }
 /* прячем кнопку НАЗАД */
 .players__list-back {
@@ -786,16 +767,30 @@ ul {
 .unitable__body-tr:nth-child(2n) {
     background-color: rgb(221, 221, 221);
 }
-.unitable__body-td {
+.unitable__body-td,
+.unitable__foot-td {
     padding: 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 80px;
+}
+.unitable__foot-td {
+    font-weight: bold;
+}
+.unitable__body-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mb20:not(:last-child) {
+    margin-bottom: 20px;
 }
 .td-pic {
     display: flex;
     align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .unitable__pic {
     cursor: pointer;
@@ -809,10 +804,16 @@ ul {
 .w140 {
     width: 140px;
 }
+.w100percent {
+    width: 100%;
+}
+.max-w100 {
+    max-width: 100px;
+}
 /* конец стилей для блока универсальныых таблиц ========================== */
 
 /*стили для странички Календаря игр ========================== */
-.unitable__title {
+.unitable__caption {
     font-size: 14px;
     font-weight: bold;
     padding: 5px;
@@ -838,27 +839,27 @@ ul {
 .fantasy__title {
     text-transform: lowercase;
 }
-.fantasy__main {
+.uniblock__main {
     display: flex;
     justify-content: space-between;
 }
-.fantasy__main-block:first-child {
-    width: 100%;
+.uniblock__main-section:first-child {
+    
 }
 .fantasy__block-wrapper {
     position: sticky;
     top: 40px;
 }
-/*.fantasy__main-block:last-child {
+/*.uniblock__main-section:last-child {
     width: 35%;
 } */
-.fantasy__caption {
+.uniblock__caption {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.fantasy__caption-date {
+.uniblock__caption-date {
     font-weight: bold;
 }
 .unitable__pic {
@@ -867,8 +868,8 @@ ul {
 .w45 {
     width: 45px;
 }
-.w55 {
-    width: 55px;
+.w50 {
+    width: 50px;
 }
 .fantasy__best {
     display: flex;
@@ -884,6 +885,11 @@ ul {
     display: flex;
     min-height: 137px;
 }
+.fantasy__best-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .fantasy__best-pic {
     background-image: url('images/19.jpg');
     background-size: 100px auto;
@@ -894,7 +900,7 @@ ul {
 .fantasy__best-info {
     width: 131px;
 }
-.fantasy__best-item{
+.fantasy__best-item:not(:last-child) {
     margin-bottom: 10px;
 }
 .fantasy__best-club {
@@ -908,6 +914,13 @@ ul {
 .w35percent {
     width: 35%;
     margin-left: 30px;
+}
+.w270 {
+    width: 270px;
+    margin-left: 30px;
+}
+.w49percent {
+    width: 49%;
 }
 .nav__bottom {
     margin-top: 10px;
@@ -970,7 +983,7 @@ ul {
     }
 }
 @media screen and (max-width: 880px) {
-    .fantasy__main-block.w35percent {
+    .uniblock__main-section.w270 {
         display: none;
     }
 }
@@ -1100,21 +1113,20 @@ ul {
         width: 100%;
     }
     /* адаптив для блока трансферов -------------------------------------------------------*/
-    .transfer__main {
+    .uniblock__main {
         flex-direction: column-reverse;
     }
-    .transfer__main-box {
-        width: 100%;
+    .uniblock__main-section {
+        
     }
-    .transfer__main-box:last-child .transfer__table {
+    .uniblock__main-section:last-child .unitable {
         display: none;
     } 
-    .transfer__table-title--icon {
+    .unitable__title--icon {
         display: flex;
     }
     .plus__logo {
         display: block;
-        margin-right: 3px;
     }
     /* адаптив для страницы с авторизацией =================================================*/
     .authorize__block {
@@ -1146,29 +1158,32 @@ ul {
     .hidden640 {
         display: none;
     }
+    .w49percent {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 490px) {
     .hidden490 {
         display: none;
     }
-    .fantasy__caption-item {
+    .uniblock__caption-item {
         display: none;
     }
 
 @media screen and (max-width: 442px) {
-    .transfer__nav {
+    .uniblock__nav {
         display: flex;
         flex-wrap: wrap;
         border-bottom: none;
     }
-    .transfer__heading-link {
+    .uniblock__heading-link {
         white-space: nowrap;
     }
-    .transfer__heading {
+    .uniblock__heading {
         width: 50%;
         border-bottom: 1px solid rgb(238, 238, 238);
     }
-    .transfer__heading:last-child {
+    .uniblock__heading:last-child {
         border-right: 1px solid rgb(238, 238, 238);
     }
     .hidden442 {

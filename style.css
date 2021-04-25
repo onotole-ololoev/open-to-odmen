@@ -969,10 +969,40 @@ ul {
     display: flex;
     
 }
-.betgame__calendar {
-    background-color: red;
-    width: 195px;
-    height: 160px;
+.calendar__block {
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.calendar__btn {
+    border: 1px solid rgb(153, 153, 153);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calendar__text {
+    white-space: nowrap;
+}
+.calendar__day {
+    border: 1px solid rgb(153, 153, 153);
+    border-bottom: none;
+    background-color: rgb(238, 238, 238);
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.calendar {
+    position: absolute;
+    right: -170px;
+    top: 30px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
+    padding: 20px;
 }
 .betgame__block {
     display: flex;

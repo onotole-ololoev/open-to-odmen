@@ -759,6 +759,9 @@ ul {
     overflow: hidden;
     text-overflow: ellipsis;  
 }
+.no-sticky {
+    position: unset;
+}
 .unitable__body {
     background-color: rgb(238, 238, 238);
 }
@@ -970,7 +973,6 @@ ul {
     
 }
 .calendar__block {
-    background-color: rgb(221, 221, 221);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -996,13 +998,18 @@ ul {
 }
 .calendar {
     position: absolute;
-    right: -170px;
-    top: 30px;
-    background-color: rgb(238, 238, 238);
+    right: -200px;
+    top: 25px;
+    background-color: white;
     border-radius: 5px;
     border: 1px solid rgb(204, 204, 204);
     box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
-    padding: 20px;
+    padding: 5px;
+}
+.calendar__caption {
+    padding: 5px;
+    padding-top: 0;
+    text-align: center;
 }
 .betgame__block {
     display: flex;
@@ -1170,6 +1177,12 @@ ul {
     .hidden960 {
         display: none;
     }
+    .betgame__block:last-child {
+        flex-direction: column;
+    }
+    .betgame__block .unitable:first-child {
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-width: 880px) {
     .uniblock__main-section.w270 {
@@ -1312,6 +1325,9 @@ ul {
     /* адаптив для блока трансферов -------------------------------------------------------*/
     .uniblock__main {
         flex-direction: column-reverse;
+    }
+    .column {
+        flex-direction: column;
     }
     .uniblock__main-section {
         

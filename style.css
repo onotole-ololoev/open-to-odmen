@@ -532,7 +532,7 @@ ul {
     color: white;
     cursor: pointer;
 }
-.btn-disable {
+.disable {
     opacity: 0.2;
     cursor: auto;
 }
@@ -742,7 +742,6 @@ ul {
     width: 100%;
     background-color: white;
     border-spacing: 1px;
-    white-space: nowrap;
 }
 .bord-bott {
     border-bottom: 1px solid rgb(153, 153, 153);
@@ -755,7 +754,10 @@ ul {
     position: sticky;
     top: 40px;
     background-color: rgb(221, 221, 221);
-    padding: 7px 5px;    
+    padding: 7px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
 }
 .unitable__body {
     background-color: rgb(238, 238, 238);
@@ -773,14 +775,18 @@ ul {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 100px;
+  /*  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
 }
 .unitable__foot-td {
     font-weight: bold;
 }
 .unitable__body-link {
-    white-space: nowrap;
+  /*  white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
 }
 .mb20:not(:last-child) {
     margin-bottom: 20px;
@@ -788,9 +794,6 @@ ul {
 .td-pic {
     display: flex;
     align-items: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .unitable__pic {
     cursor: pointer;
@@ -943,7 +946,7 @@ ul {
     color: #FFFFFF;
     text-decoration: none;
 }
-.btn-disable .nav__bottom-list-item--link:hover {
+.disable .nav__bottom-list-item--link:hover {
     background: #eeeeee;
     border: 1px solid #cccccc;
     color: #636363;
@@ -956,7 +959,163 @@ ul {
 .green {
     color: green;
 }
+.ml30 {
+    margin-left: 30px;
+}
+.column {
+    flex-direction: column;
+}
+.betgame__wrapper {
+    display: flex;
+    
+}
+.betgame__calendar {
+    background-color: red;
+    width: 195px;
+    height: 160px;
+}
+.betgame__block {
+    display: flex;
+}
+.betgame__block:last-child {
+    width: 100%;
+    margin-left: 10px;
+}
+.bg__table {
+    background-color: rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(153, 153, 153);    
+    /*display: table;
+    width: 100%; */
+}
+.bg__table-row {
+    display: table-row;
+}
+.header-row {
+    font-weight: bold;
+    background-color:rgb(221, 221, 221);
+}
+.bg__table-date,
+.bg__table-flag,
+.bg__table-match,
+.bg__table-score {
+    display: table-cell;
+    padding: 5px;
+}
+.bg__table-wrap {
+    display: table-cell;
+}
+.bg__table-date {
+    white-space: nowrap;
+    border: 1px solid rgb(153, 153, 153);
+    border-bottom: none;   
+}
+.bg__table-flag {
+    border-top: 1px solid rgb(153, 153, 153);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.bg__table-match {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    border: 1px solid rgb(153, 153, 153);
+    border-bottom: none;   
+}
+.bg__table-score {
+    border: 1px solid rgb(153, 153, 153);
+    border-bottom: none;
+    border-left: none;
+    padding-left: 2px;
+    padding-right: 2px;  
+}
+.bg__table-inner {
+    display: flex;
+    justify-content: space-around;
+}
+.bg__table-cell {
+   padding: 5px;
+   width: 33%;
+   text-align: center;
+   border: 1px solid rgb(153, 153, 153);
+   border-left: none;
+   border-bottom: none;
 
+}
+.bg__table-inner2 {
+    display: flex;
+    justify-content: space-around;
+}
+.bg__table-cell2 {
+    padding: 5px;
+    width: 20%;
+    text-align: center;
+    border: 1px solid rgb(153, 153, 153);
+    border-left: none;
+    border-bottom: none;
+}
+
+.bg__adaptive {
+    display: flex;
+    width: 100%;
+    border: 1px solid rgb(153, 153, 153);
+    border-bottom: none;
+    display: none;
+}
+.bg__adaptive-cell {
+    width: 33%;
+    text-align: center;
+    padding: 5px;
+}
+.bg__adaptive-cell:nth-child(2) {
+    border-right: 1px solid rgb(153, 153, 153);
+    border-left: 1px solid rgb(153, 153, 153);
+
+}
+.bg__adaptive-cell2 {
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid rgb(153, 153, 153);
+    padding: 5px;
+}
+.bg__adaptive-cell2:last-child {
+    border-right: none;
+}
+.bg__event {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.disable {
+    opacity: 0.2;
+    cursor: auto;
+}
+/*.bg__table-cell {
+    display: table-cell;
+    padding: 5px;
+    border: 1px solid black;
+    
+}
+.bg__table-wrap {
+    padding: 0;
+    display: table-cell;
+}
+.bg__table-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+.bg__table-inner2 {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
+.bg__table-cell-in {
+    width: 33%;
+}
+.bg__table-cell-in {
+    width: 20%;
+} */
 /* адаптив центрального блока с таблицами лучших игроков и команд */
 @media screen and (max-width: 1280px) {
     .main__content-center {
@@ -1067,6 +1226,14 @@ ul {
         width: 100%;
     }
     
+}
+@media screen and (max-width: 660px) {
+    .bg__table-wrap {
+        display: none;
+    }
+    .bg__adaptive {
+        display: flex;
+    }
 }
 @media screen and (max-width: 640px) {
     .top__section {

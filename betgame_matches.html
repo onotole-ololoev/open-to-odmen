@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href='style.css'>
+    <title>Футбольная лига прогнозирования</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__inner">
+          <div class="hamburger__btn">
+            <div class="hamburger__btn-line"></div>
+            <div class="hamburger__btn-line"></div>
+            <div class="hamburger__btn-line"></div>
+          </div>
+          <div class="header__registration">
+            <a href="authorize.html" class="header__link"><img src="images/enter.PNG" alt="..."><span class="header__link-text">Вход</span></a>
+            <a href="#" class="header__link"><img src="images/registration.PNG" alt="..."><span class="header__link-text">Регистрация</span></a>
+          </div>
+          <div class="header__account">
+            <a href="#" class="header__link"><img src="images/message-icon.png" alt="..."><span class="message__counter message__unread">8</span><span class="message__text">Сообщения</span></a>
+            <a href="#" class="header__link"><img src="images/money-icon.png" alt="..."><span class="money__counter">15.8</span>Ob</a>
+            <div class="header__avatar"></div>
+          </div>
+          <div class="header__account-info">
+            <div class="user-name">Onotole Ololoev</div>
+            <div class="user-emale">tolya.tar@tut.by</div>
+            <div class="exit__block">
+              <a href="#" class="exit__link"><img src="images/exit.png" alt="..." class="exit-logo"></a>
+              <a href="#" class="exit__text">Выход</a>
+            </div>
+          </div>
+      </div>    
+    </header>
+    <div class="top__section">
+          <div class="top__main"> 
+            <div class="top__logo"><a href="index.html"><img src="images/logo.PNG" alt="logo" class="logo-openball"></a></div>
+            <div class="top__title"><h1>Футбольная<br>Лига<br>Прогнозирования</h1></div>
+          </div>      
+          <div class="top__info">
+            <span class='span__title span__title-reminder'>До старта тура:</span>
+            <div class="top__info-counter"><p>менее<span>24</span>недель</p></div>
+            <div class="coupon"><a href="#" class="coupon__link">Сделай ставку</a></div>
+          </div>
+    </div>
+    <div class="main__section">
+          <div class="main__menu">
+            <div class="main__menu-shadow"></div>
+            <nav class='navigation'>
+              <span class='span__title'>Меню</span> 
+              <ul class='navigation__list'>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='index.html'>Openball</a></li>   
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>О лиге</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Правила</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='transfers.html'>Трансфер<span class="notification">3</span></a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='calendar.html'>Календарь<span class="notification">34</span></a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Статистика тура</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='fantasy.html'>Fantasy</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link active' href='#'>Bet Game</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Турниры</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Игровые Дни</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='teams.html'>Команды</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Рекорды</a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Обсуждения<span class="notification">3235</span></a></li>
+                <li class='navigation__list-item'><a class='navigation__list-item--link' href='#'>Online</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="uniblock">
+              <span class='span__title'><a class='span__link' href="#">Bet Game</a></span>
+              <nav class="uniblock__nav">
+                <div class="uniblock__heading"><a href="betgame.html" class="uniblock__heading-link">Общая статистика</a></div>
+                <div class="uniblock__heading active"><a href="#" class="uniblock__heading-link">Матчи для ставок</a></div>
+                <div class="uniblock__heading"><a href="betgame_race.html" class="uniblock__heading-link">Bet Game Race</a></div>
+                <div class="uniblock__heading"><a href="#" class="uniblock__heading-link">Достижения</a></div>
+                <div class="uniblock__heading"><a href="#" class="uniblock__heading-link">Правила</a></div>
+              </nav>
+              <div class="uniblock__main column">
+                <div class="uniblock__main-section mb20">  
+                    <div class="betgame__wrapper">
+                        <div class="betgame__block">
+                            <div class="betgame__calendar">
+
+                            </div>
+                        </div>
+                        <div class="betgame__block">
+                            <table class="unitable">
+                                <thead class="unitable__head">
+                                    <tr class="unitable__head-tr">
+                                        <th class="unitable__head-th" align="center" colspan="3">Ваши ставки на <span>22 апреля 2021 года:</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="unitable__body">
+                                    <tr class="unitable__body-tr">
+                                        <td class="unitable__body-td w100percent" align="left"><div class="td-pic"><img src="images/flag_england.png" alt="..." class="unitable__pic">Манчестер Ютд. - Манчестер Сити</div></td>
+                                        <td class="unitable__body-td" align="center">П1</td>
+                                        <td class="unitable__body-td" align="center">2.43</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="unitable__foot">
+                                    <tr class="unitable__foot-tr">
+                                        <td class="unitable__body-td" align="center" colspan="3">Вы не делали ставок на матчи этого дня</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <table class="unitable">
+                                <thead class="unitable__head">
+                                    <tr class="unitable__head-tr">
+                                        <th class="unitable__head-th" align="center" colspan="5">Выбранные матчи:</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="unitable__body">
+                                    <tr class="unitable__body-tr">
+                                        <td class="unitable__body-td" align="center">15:00</td>
+                                        <td class="unitable__body-td w100percent" align="left"><div class="td-pic"><img src="images/flag_england.png" alt="..." class="unitable__pic">Манчестер Ютд. - Манчестер Сити</div></td>
+                                        <td class="unitable__body-td" align="center">П1</td>
+                                        <td class="unitable__body-td" align="center">2.43</td>
+                                        <td class="unitable__body-td" align="center"><img src="images/btn_delete.gif" alt="..." class="unitable__pic"></td>
+                                    </tr> 
+                                    <tr class="unitable__body-tr">
+                                        <td class="unitable__body-td" align="center" colspan="5">Выберите ставки в нижнем блоке</td>
+                                    </tr>   
+                                </tbody>
+                                <tfoot class="unitable__foot">
+                                        <td class="unitable__body-td" align="center" colspan="5">
+                                            <input type="button" class="" value="Сделать ставку">
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="uniblock__main-section">
+                    <div class="bg__table">
+                        <div class="bg__table-row header-row">
+                            <div class="bg__table-date">Дата</div>
+                            <div class="bg__table-flag"></div>
+                            <div class="bg__table-match">Матч</div>
+                            <div class="bg__table-wrap">
+                                <div class="bg__table-inner">
+                                    <div class="bg__table-cell">1</div>
+                                    <div class="bg__table-cell">X</div>
+                                    <div class="bg__table-cell">2</div>
+                                </div>
+                            </div>
+                            <div class="bg__table-wrap">
+                                <div class="bg__table-inner2">
+                                    <div class="bg__table-cell2">1X</div>
+                                    <div class="bg__table-cell2">X2</div>
+                                    <div class="bg__table-cell2">Т</div>
+                                    <div class="bg__table-cell2">М</div>
+                                    <div class="bg__table-cell2">Б</div>
+                                </div>
+                            </div>
+                            <div class="bg__table-score">Счет</div>
+                        </div>
+                        <div class="bg__table-row">
+                            <div class="bg__table-date">16.04 17:00</div>
+                            <div class="bg__table-flag"><div class="td-pic"><img src="images/flag_england.png" alt="..."></div></div>
+                            <div class="bg__table-match">Львов - Вульверхэмптон Юнайтед</div>
+                            <div class="bg__table-wrap">
+                                <div class="bg__table-inner">
+                                    <div class="bg__table-cell"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell"><span class="bg__coef">4.2</span></div>
+                                </div>
+                            </div>
+                            <div class="bg__table-wrap">
+                                <div class="bg__table-inner2">
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__event">2.5</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                </div>
+                            </div>
+                            <div class="bg__table-score">Счет</div>
+                        </div>
+                        <div class="bg__adaptive">
+                            <div class="bg__adaptive-cell"><span class="bg__event">1</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell"><span class="bg__event">X</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell"><span class="bg__event">2</span><span class="bg__coef">4.2</span></div> 
+                        </div>
+                        <div class="bg__adaptive">
+                            <div class="bg__adaptive-cell2"><span class="bg__event">1X</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell2"><span class="bg__event">X2</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell2"><span class="bg__event">ТМ 2.5</span><span class="bg__coef ">4.2</span></div>
+                            <div class="bg__adaptive-cell2"><span class="bg__event">ТБ 2.5</span><span class="bg__coef">4.2</span></div>
+                        </div>
+                        <div class="bg__table-row">
+                            <div class="bg__table-date">16.04 17:00</div>
+                            <div class="bg__table-flag"><div class="td-pic"><img src="images/flag_england.png" alt="..."></div></div>
+                            <div class="bg__table-match">Львов - Вульверхэмптон Юнайтед</div>
+                            <div class="bg__table-wrap">
+                                <div class="bg__table-inner">
+                                    <div class="bg__table-cell"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell"><span class="bg__coef">4.2</span></div>
+                                </div>
+                            </div>
+                            <div class="bg__table-wrap">
+                                <div class="bg__table-inner2">
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__event">2.5</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                </div>
+                            </div>
+                            <div class="bg__table-score">Счет</div>
+                        </div>
+                        <div class="bg__adaptive">
+                            <div class="bg__adaptive-cell"><span class="bg__event">1</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell"><span class="bg__event">X</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell"><span class="bg__event">2</span><span class="bg__coef">4.2</span></div> 
+                        </div>
+                        <div class="bg__adaptive">
+                            <div class="bg__adaptive-cell2"><span class="bg__event">1X</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell2"><span class="bg__event">X2</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell2"><span class="bg__event">ТМ 2.5</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell2"><span class="bg__event">ТБ 2.5</span><span class="bg__coef">4.2</span></div>
+                        </div>
+                        <div class="bg__table-row">
+                            <div class="bg__table-date">16.04 17:00</div>
+                            <div class="bg__table-flag"><div class="td-pic"><img src="images/flag_england.png" alt="..."></div></div>
+                            <div class="bg__table-match">Львов - Вульверхэмптон Юнайтед</div>
+                            <div class="bg__table-wrap">
+                                <div class="bg__table-inner">
+                                    <div class="bg__table-cell"><span class="bg__coef disable">4.2</span></div>
+                                    <div class="bg__table-cell"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell"><span class="bg__coef">4.2</span></div>
+                                </div>
+                            </div>
+                            <div class="bg__table-wrap">
+                                <div class="bg__table-inner2">
+                                    <div class="bg__table-cell2"><span class="bg__coef disable">4.2</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__event">2.5</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                    <div class="bg__table-cell2"><span class="bg__coef">4.2</span></div>
+                                </div>
+                            </div>
+                            <div class="bg__table-score">Счет</div>
+                        </div>
+                        <div class="bg__adaptive">
+                            <div class="bg__adaptive-cell"><span class="bg__event">1</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell"><span class="bg__event">X</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell"><span class="bg__event">2</span><span class="bg__coef">4.2</span></div> 
+                        </div>
+                        <div class="bg__adaptive">
+                            <div class="bg__adaptive-cell2"><span class="bg__event">1X</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell2"><span class="bg__event">X2</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell2"><span class="bg__event">ТМ 2.5</span><span class="bg__coef">4.2</span></div>
+                            <div class="bg__adaptive-cell2"><span class="bg__event">ТБ 2.5</span><span class="bg__coef">4.2</span></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    
+    </div>
+    </div>
+    <footer class='footer'>
+        <div class="footer__copyright">
+          <span class='footer__copyright-text'>Copyright © 2007-2021</span>
+          <a href="#" class='footer__copyright-link'>OpenBall</a>
+        </div>
+    </footer>
+  </div>
+ <!--  <script src="script.js"></script> -->
+</body>
+</html>

@@ -787,9 +787,9 @@ ul {
     font-weight: bold;
 }
 .unitable__body-link {
-  /*  white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; */
+    text-overflow: ellipsis;
 }
 .mb20:not(:last-child) {
     margin-bottom: 20px;
@@ -1034,6 +1034,12 @@ ul {
     /*display: table;
     width: 100%; */
 }
+.bg-match {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
 .bg__table-row {
     display: table-row;
 }
@@ -1168,6 +1174,38 @@ ul {
 .bg__table-cell-in {
     width: 20%;
 } */
+
+/* ====================== стили для Турниров!!!!!!!!!!!!!!! =================================== */
+
+.turnir {
+    max-width: 80px;
+    background-color:rgb(0, 170, 50);
+    color: #FFFFFF;
+    font-size: 10px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 4px 4px;
+}
+.blue {
+    background-color:rgb(27, 96, 155);
+}
+/* ====================== стили для Таблицы ЛИГ !!!!!!!!!!!!!!! =================================== */
+.turnir__header {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.turnir__nav {
+    display: flex;
+    justify-content: center;
+}
+.turnir__nav-item {
+    padding: 3px;
+    margin: 5px;
+}
 /* адаптив центрального блока с таблицами лучших игроков и команд */
 @media screen and (max-width: 1280px) {
     .main__content-center {
@@ -1350,9 +1388,10 @@ ul {
     .uniblock__main-section {
         
     }
+    /*
     .uniblock__main-section:last-child .unitable {
         display: none;
-    } 
+    } */
     .unitable__title--icon {
         display: flex;
     }
@@ -1393,6 +1432,11 @@ ul {
         width: 100%;
     }
 }
+@media screen and (max-width: 510px) {
+    .hidden510 {
+        display: none;
+    }
+    }
 @media screen and (max-width: 490px) {
     .hidden490 {
         display: none;
@@ -1467,6 +1511,13 @@ ul {
     }
     .min50 {
         min-width: 50px;
+    }
+    .hidden360 {
+        display: none;
+    }
+    .turnir__header {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
 

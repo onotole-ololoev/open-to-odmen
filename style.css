@@ -746,7 +746,10 @@ ul {
 .bord-bott {
     border-bottom: 1px solid rgb(153, 153, 153);
 }
-
+.unitable__head {
+    position: sticky;
+    top: 40px;
+}
 .unitable__head-tr {
     background-color: rgb(221, 221, 221);
 }
@@ -1217,16 +1220,27 @@ ul {
     top: 40px;
     margin-left: 20px;
 }
+.sidebar__list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
 .sidebar__list-item--link {
     color: #23527c;
     display: block;
-    padding: 5px 7px;
-    border-bottom: 1px solid rgb(238, 238, 238);
     text-align: left;
-    transition: none; 
+    transition: none;
+    white-space: nowrap;
+    padding: 5px;
+    
+}
+.sidebar__list-item:hover {
+    background-color: rgb(238, 238, 238);
+    text-decoration: none;
 }
 .sidebar__list-item--link:hover {
-    background-color: rgb(238, 238, 238);
     text-decoration: none;
 }
 .turnir-pic {
@@ -1258,10 +1272,20 @@ ul {
     padding: 5px;
     border: none;
     border-left: 1px solid rgb(153, 153, 153);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.comment__btn:hover {
+    background: #636363;
+    color: white;
 }
 .comment__pic {
     width: 15px;
 }
+.comment__pic:hover {
+    cursor: pointer;
+}
+
 .ml10 {
     margin-left: 10px;
 }
@@ -1297,6 +1321,75 @@ ul {
 .board__bottom {
     display: flex;
     justify-content: flex-end;
+}
+.svg__box {
+    margin-left: 5px;
+}
+.svg__like,
+.svg__dislike {
+    fill: rgb(27, 96, 155);
+}
+.svg__like:hover {
+    fill: green;
+    cursor: pointer;
+}
+.svg__dislike:hover {
+    fill: red;
+    cursor: pointer;
+} 
+.turnir__form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.uniblock__caption-select {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.turnir__btn {
+    padding: 2px;
+    border: none;
+    border: 1px solid #636363;
+    background: #eeeeee;
+    color: #636363;
+    transition: all 0.5s;
+}
+.turnir__btn:hover {
+    background: #636363;
+    color: white;
+    cursor: pointer;
+}
+.mar-top10 {
+    margin-top: 10px;
+}
+/* стили для календаря игр ================================== */
+.calendar__box {
+    display: flex;
+}
+.calendar__header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(27, 96, 155);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.calendar__match {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+}
+.calendar__match:nth-child(2n) {
+    background-color: rgb(221, 221, 221);
+}
+.calendar__match-item {
+    display: flex;
+    padding: 5px;
+}
+.calendar__event {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 /* адаптив центрального блока с таблицами лучших игроков и команд */
 @media screen and (max-width: 1280px) {
@@ -1341,6 +1434,9 @@ ul {
     }
     .turnir__nav {
         display: flex;
+    }
+    .turnir__form {
+        justify-content: center;
     }
 }
 
@@ -1531,9 +1627,33 @@ ul {
         width: 100%;
     }
 }
+@media screen and (max-width: 610px) {
+    .hidden610 {
+        display: none;
+    }
+}
+@media screen and (max-width: 525px) {
+    .hidden525 {
+        display: none;
+    }
+    .calendar__match {
+        flex-direction: column;
+    }
+    .calendar__match-item {
+        justify-content: space-between;
+    }
+    .calendar__match-item:last-child {
+        flex-direction: row-reverse;
+    }
+    }
 @media screen and (max-width: 510px) {
     .hidden510 {
         display: none;
+    }
+    .visibility {
+        visibility: hidden;
+        width: 0;
+        height: 0;
     }
     }
 @media screen and (max-width: 490px) {
@@ -1574,6 +1694,10 @@ ul {
     }
     .calendar__block {
         margin-bottom: 10px;
+    }
+    .board__top {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -1617,6 +1741,18 @@ ul {
     .turnir__header {
         flex-direction: column-reverse;
         align-items: center;
+    }
+    .board__top-user {
+        font-size: 13px;
+    }
+    .board__top-date {
+        font-size: 9px;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .mt5 {
+        margin-top: 5px;
     }
 }
 
